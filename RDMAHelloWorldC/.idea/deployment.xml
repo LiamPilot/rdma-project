@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="Client (f4ae3a76-3464-4838-83fa-53b08b7efe67)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/lp616/project/RDMAHelloWorldC" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.ccls-cache" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="RemoteServer (13c64cbb-0f94-4587-8129-e3018bdc4b09)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/lp616/project/RDMAHelloWorldC" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.ccls-cache" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
