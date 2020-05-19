@@ -2,7 +2,7 @@
 // Created by liampilot on 05/05/2020.
 //
 
-#include "Client.h"
+#include "RunClient.h"
 
 #include "utils.h"
 #include <string>
@@ -141,7 +141,7 @@ double run_write_test(int buffer_size, infinity::core::Context *context, infinit
 
 double run_twosided_test(int buffer_size, infinity::core::Context *context, infinity::queues::QueuePair *qp,
                          infinity::requests::RequestToken *requestToken, int data_size) {
-    std::cout << "Receiving " << data_size << " bytes in " << buffer_size << " byte chunks" << std::endl;
+    std::cout << "Receiving " << data_size << " bytes in " << buffer_size << " byte chunks" << '\n';
 
     auto buffer = new infinity::memory::Buffer(context, buffer_size);
     utils::print("Sending start signal");

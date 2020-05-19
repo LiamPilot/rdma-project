@@ -1,0 +1,14 @@
+//
+// Created by liampilot on 19/05/2020.
+//
+
+#ifndef THROUGHPUTEXPERIMENTS_RDMASERVER_H
+#define THROUGHPUTEXPERIMENTS_RDMASERVER_H
+
+
+class RdmaServer {
+
+};
+
+
+#endif //THROUGHPUTEXPERIMENTS_RDMASERVER_H

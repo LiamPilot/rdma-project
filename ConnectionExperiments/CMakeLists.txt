@@ -22,8 +22,8 @@ add_executable(ThroughputExperiments main.cpp
         Server.h
         utils.cpp
         utils.h
-        Client.cpp
-        Client.h experiment_type.h)
+        RunClient.cpp
+        RunClient.h experiment_type.h RdmaClient.cpp RdmaClient.h RdmaServer.cpp RdmaServer.h)
 
 include_directories(/usr/include .)
 

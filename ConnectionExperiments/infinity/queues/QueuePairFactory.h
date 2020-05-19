@@ -14,6 +14,7 @@
 
 #include <infinity/core/Context.h>
 #include <infinity/queues/QueuePair.h>
+#include <bits/unique_ptr.h>
 
 namespace infinity {
 namespace queues {
@@ -21,7 +22,7 @@ namespace queues {
 class QueuePairFactory {
 public:
 
-	QueuePairFactory(infinity::core::Context *context);
+	QueuePairFactory(core::Context *context);
 	~QueuePairFactory();
 
 	/**

@@ -2,10 +2,10 @@
 // Created by liampilot on 05/05/2020.
 //
 
-#ifndef THROUGHPUTEXPERIMENTS_CLIENT_H
+#ifndef THROUGHPUTEXPERIMENTS_RDMACLIENT_H
 #define THROUGHPUTEXPERIMENTS_CLIENT_H
 
-#endif //THROUGHPUTEXPERIMENTS_CLIENT_H
+#endif //THROUGHPUTEXPERIMENTS_RDMACLIENT_H
 
 #include <infinity/core/Context.h>
 #include <infinity/queues/QueuePairFactory.h>

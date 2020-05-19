@@ -30,7 +30,7 @@ typedef struct {
 
 } serializedQueuePair;
 
-QueuePairFactory::QueuePairFactory(infinity::core::Context *context) {
+QueuePairFactory::QueuePairFactory(core::Context *context) {
 
 	this->context = context;
 	this->serverSocket = -1;

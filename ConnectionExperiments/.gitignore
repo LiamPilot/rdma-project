@@ -132,7 +132,7 @@ fabric.properties
 
 
 
-# Editor-based Rest Client
+# Editor-based Rest RdmaClient
 
 .idea/httpRequests
 

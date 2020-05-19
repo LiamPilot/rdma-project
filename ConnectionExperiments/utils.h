@@ -11,8 +11,15 @@
 
 #define TUPLE_SIZE 78
 #define NUM_TUPLES 10000000
-#define PORT 8001
 #define TEST_LENGTH 100000
+
+constexpr int PORT = 8001;
+
+struct test_result {
+    int buffer_size;
+    double throughput;
+};
+
 namespace utils {
     void print(const std::string&);
     char* GenerateRandomData(int len);
