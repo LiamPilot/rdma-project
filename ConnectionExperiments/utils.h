@@ -9,10 +9,10 @@
 
 #include <string>
 
-#define TUPLE_SIZE 78
-#define NUM_TUPLES 10000000
-#define TEST_LENGTH 100000
 
+
+constexpr int TUPLE_SIZE = 78;
+constexpr int NUM_TUPLES = 10000000;
 constexpr int PORT = 8001;
 
 struct test_result {

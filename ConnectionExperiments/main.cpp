@@ -29,13 +29,33 @@ string get_server_ip(int argc, char* argv[]) {
 }
 
 int get_tuple_size(int argc, char* argv[]) {
-    string value = get_arg_value(argc, argv, "-tuplesize", "78");
+    string value = get_arg_value(argc, argv, "-tuplesize", to_string(TUPLE_SIZE));
     return std::stoi(value);
 }
 
 int get_num_tuples(int argc, char* argv[]) {
-    string value = get_arg_value(argc, argv, "-numtuples", "10000000");
+    string value = get_arg_value(argc, argv, "-numtuples", to_string(NUM_TUPLES));
     return std::stoi(value);
+}
+
+Metric get_test_metric(int argc, char* argv[]) {
+    string value = get_arg_value(argc, argv, "-metric", "t");
+    if (value == "t") {
+        return Metric::throughput;
+    } else {
+        return Metric::latency;
+    }
+}
+
+Connection get_connection_type(int argc, char* argv[]) {
+    string value = get_arg_value(argc, argv, "-metric", "rdma");
+    if (value == "rdma") {
+        return Connection::rdma;
+    } else if (value == "tcp") {
+        return Connection::tcp;
+    } else {
+        return Connection::rpc;
+    }
 }
 
 bool is_server(int argc, char* argv[]) {
