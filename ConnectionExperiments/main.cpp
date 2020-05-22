@@ -11,8 +11,6 @@
 #include "RunClient.h"
 #include "experiment_type.h"
 
-#define PORT 8001
-
 string get_arg_value(int argc, char* argv[], const string& arg_name, string default_value) {
     for (int i = 0; i < argc; i++) {
         string arg = argv[i];
@@ -68,7 +66,7 @@ bool is_server(int argc, char* argv[]) {
     return false;
 }
 
-DataDirection getDirection(int argc, char* argv[]) {
+DataDirection get_direction(int argc, char **argv) {
     for (int i = 0; i < argc; i++) {
         string arg = argv[i];
         if (arg == "-w") {
@@ -98,7 +96,8 @@ int main(int argc, char* argv[]) {
 
     int tuple_size = get_tuple_size(argc, argv);
     int num_tuples = get_num_tuples(argc, argv);
-    DataDirection dataDirection = getDirection(argc, argv);
+    DataDirection dataDirection = get_direction(argc, argv);
+    Metric metric = get_test_metric(argc, argv);
 
     if (is_server(argc, argv)) {
         utils::print("Running Server");
