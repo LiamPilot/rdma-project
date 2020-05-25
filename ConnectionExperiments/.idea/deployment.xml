@@ -2,10 +2,10 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
-      <paths name="Client (f4ae3a76-3464-4838-83fa-53b08b7efe67)">
+      <paths name="Client (4227e8cb-5ff3-4b80-be57-9311be910b87)">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/lp616/project/ThroughputExperiments" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/lp616/project/ConnectionExperiments" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
@@ -15,7 +15,7 @@
       <paths name="RemoteServer (13c64cbb-0f94-4587-8129-e3018bdc4b09)">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/lp616/project/ThroughputExperiments" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/lp616/project/ConnectionExperiments" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />

@@ -2,8 +2,8 @@
 // Created by liampilot on 19/05/2020.
 //
 
-#ifndef THROUGHPUTEXPERIMENTS_RDMASERVER_H
-#define THROUGHPUTEXPERIMENTS_RDMASERVER_H
+#ifndef CONNECTIONEXPERIMENTS_RDMASERVER_H
+#define CONNECTIONEXPERIMENTS_RDMASERVER_H
 
 #include <memory>
 
@@ -11,12 +11,15 @@
 #include <infinity/queues/QueuePair.h>
 #include <infinity/queues/QueuePairFactory.h>
 
-class RdmaServer {
+#include "Server.h"
+
+class RdmaServer : public Server {
 
 public:
-    RdmaServer(const infinity::core::Context& c, int port) : context(c) {
-        qp_factory = std::make_unique<infinity::queues::QueuePairFactory>(&context);
-        qp_factory->bindToPort(port);
+    RdmaServer(std::unique_ptr<infinity::core::Context> c, const std::string& port) {
+        context = std::move(c);
+        qp_factory = std::make_unique<infinity::queues::QueuePairFactory>(context.get());
+        qp_factory->bindToPort(std::stoi(port));
     }
 
     void run_read_experiments(int data_size);
@@ -25,9 +28,12 @@ public:
 
     void run_two_sided_experiments(int data_size);
 
+    void run_throughput_tests() override;
+
+    void run_latency_tests() override;
 
 private:
-    infinity::core::Context context;
+    std::unique_ptr<infinity::core::Context> context;
     std::unique_ptr<infinity::queues::QueuePairFactory> qp_factory;
 
     void write_test(int data_size);
@@ -39,4 +45,4 @@ private:
 };
 
 
-#endif //THROUGHPUTEXPERIMENTS_RDMASERVER_H
+#endif //CONNECTIONEXPERIMENTS_RDMASERVER_H

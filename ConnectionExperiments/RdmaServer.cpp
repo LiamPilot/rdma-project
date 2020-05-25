@@ -11,18 +11,18 @@
 #include <utils.h>
 
 void RdmaServer::run_read_experiments(int data_size) {
-    utils::print("Creating random data");
+    std::cout << "Creating random data\n";
     char *data = utils::GenerateRandomData(data_size);
 
-    utils::print("Creating Buffer with Data");
+    std::cout << "Creating Buffer with Data\n";
     auto data_buffer = new infinity::memory::Buffer(&context, data, data_size * sizeof(char));
     auto buffer_token = data_buffer->createRegionToken();
     auto qp = qp_factory->acceptIncomingConnection(buffer_token, sizeof(infinity::memory::RegionToken));
 
-    utils::print("Waiting for client to finish");
+    std::cout << "Waiting for client to finish\n";
     waitForControlMessage();
 
-    utils::print("Done, cleaning up");
+    std::cout << "Done, cleaning up\n";
     free(data);
     delete data_buffer;
     delete qp;
@@ -36,15 +36,15 @@ void RdmaServer::run_write_experiments(int data_size) {
 }
 
 void RdmaServer::run_two_sided_experiments(int data_size) {
-    utils::print("Connecting to client");
+    std::cout << "Connecting to client\n";
     auto buffer = new infinity::memory::Buffer(&context, sizeof(char));
     auto buffer_token = buffer->createRegionToken();
     auto qp = qp_factory->acceptIncomingConnection(buffer_token, sizeof(infinity::memory::RegionToken));
 
-    utils::print("generating data");
+    std::cout << "generating data\n";
     char *data = utils::GenerateRandomData(tuple_size * num_tuples);
 
-    utils::print("Doing two sided test");
+    std::cout << "Doing two sided test\n";
     for (int buffer_size : utils::buffer_sizes) {
         two_sided_test(buffer_size, data_size, data, qp);
     }
@@ -59,10 +59,10 @@ void RdmaServer::write_test(int data_size) {
     auto data_buffer = new infinity::memory::Buffer(&context, data_size * sizeof(char));
     auto buffer_token = data_buffer->createRegionToken();
 
-    utils::print("Ready for test");
+    std::cout << "Ready for test\n";
     auto qp = qp_factory->acceptIncomingConnection(buffer_token, sizeof(infinity::memory::RegionToken));
 
-    utils::print("Waiting for client to finish");
+    std::cout << "Waiting for client to finish\n";
     waitForControlMessage();
 
     delete data_buffer;
@@ -73,7 +73,7 @@ void RdmaServer::two_sided_test(int buffer_size, int data_size, char *data, infi
     std::cout << "Sending " << data_size << " bytes in " << buffer_size << " chunks" << '\n';
     auto data_buffer = new infinity::memory::Buffer(&context, data, data_size * sizeof(char));
 
-    utils::print("Waiting for client to be ready");
+    std::cout << "Waiting for client to be ready\n";
     waitForControlMessage();
 
     auto requestToken = context.defaultRequestToken;
@@ -98,7 +98,7 @@ void RdmaServer::two_sided_test(int buffer_size, int data_size, char *data, infi
              requestToken);
     requestToken->waitUntilCompleted();
 
-    utils::print("Done sending, waiting for confirmation from client");
+    std::cout << "Done sending, waiting for confirmation from client\n";
     waitForControlMessage();
 
     delete data_buffer;
@@ -111,4 +111,12 @@ void RdmaServer::waitForControlMessage() {
     while (!context.receive(receive_elem));
     delete receive_elem;
     delete receive_buffer;
+}
+
+void RdmaServer::run_throughput_tests() {
+
+}
+
+void RdmaServer::run_latency_tests() {
+
 }

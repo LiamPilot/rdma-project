@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(ThroughputExperiments)
+project(ConnectionExperiments)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O0")
 set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -O0")
 
-add_executable(ThroughputExperiments main.cpp
+add_executable(ConnectionExperiments main.cpp
         infinity/core/Context.cpp
         infinity/memory/Atomic.cpp
         infinity/memory/Buffer.cpp
@@ -18,14 +18,14 @@ add_executable(ThroughputExperiments main.cpp
         infinity/queues/QueuePairFactory.cpp
         infinity/requests/RequestToken.cpp
         infinity/utils/Address.cpp
-        Server.cpp
-        Server.h
+        RunServer.cpp
+        RunServer.h
         utils.cpp
         utils.h
         RunClient.cpp
-        RunClient.h experiment_type.h RdmaClient.cpp RdmaClient.h RdmaServer.cpp RdmaServer.h)
+        RunClient.h experiment_type.h RdmaClient.cpp RdmaClient.h RdmaServer.cpp RdmaServer.h Client.cpp Client.h Server.cpp Server.h TcpClient.cpp TcpClient.h TcpServer.cpp TcpServer.h)
 
-include_directories(/usr/include .)
+include_directories(/usr/include . /usr/local/include)
 
 find_library(IBVERBS ibverbs /usr/lib)
-target_link_libraries(ThroughputExperiments ${IBVERBS})
+target_link_libraries(ConnectionExperiments ${IBVERBS})

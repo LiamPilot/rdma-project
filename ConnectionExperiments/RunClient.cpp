@@ -65,7 +65,7 @@ double run_read_test(int buffer_size, infinity::core::Context *context, infinity
         infinity::memory::RegionToken* remote_buffer_token, infinity::requests::RequestToken *requestToken, int data_size) {
     auto local_buffer = new infinity::memory::Buffer(context, data_size * sizeof(char));
 
-    utils::print("Start Reading");
+    std::cout << "Start Reading\n";
 
     auto read_size = buffer_size * sizeof(char);
     auto op_flags = infinity::queues::OperationFlags();
@@ -90,7 +90,7 @@ double run_read_test(int buffer_size, infinity::core::Context *context, infinity
              requestToken);
     requestToken->waitUntilCompleted();
     auto stop = chrono::high_resolution_clock::now();
-    utils::print("Finished Reading");
+    std::cout << "Finished Reading\n";
     chrono::duration<double, std::ratio<1, 1>> time = stop - start;
     cout << time.count() << endl;
     double throughput = ((double) data_size) / time.count();
@@ -103,7 +103,7 @@ double run_write_test(int buffer_size, infinity::core::Context *context, infinit
                      infinity::memory::RegionToken* remote_buffer_token, infinity::requests::RequestToken *requestToken,
                      int data_size, infinity::memory::Buffer* local_buffer) {
 
-    utils::print("Start Writing");
+    std::cout << "Start Writing\n";
     requestToken = context->defaultRequestToken;
     auto read_size = buffer_size * sizeof(char);
     auto op_flags = infinity::queues::OperationFlags();
@@ -130,7 +130,7 @@ double run_write_test(int buffer_size, infinity::core::Context *context, infinit
     requestToken->waitUntilCompleted();
 
     auto stop = chrono::high_resolution_clock::now();
-    utils::print("Finished Reading");
+    std::cout << "Finished Reading\n";
     chrono::duration<double, std::ratio<1, 1>> time = stop - start;
     cout << time.count() << endl;
     double throughput = ((double) data_size) / time.count();
@@ -144,7 +144,7 @@ double run_twosided_test(int buffer_size, infinity::core::Context *context, infi
     std::cout << "Receiving " << data_size << " bytes in " << buffer_size << " byte chunks" << '\n';
 
     auto buffer = new infinity::memory::Buffer(context, buffer_size);
-    utils::print("Sending start signal");
+    std::cout << "Sending start signal\n";
     auto *control_buffer = new infinity::memory::Buffer(context, 1);
     qp->send(control_buffer, requestToken);
     requestToken->waitUntilCompleted();
@@ -160,7 +160,7 @@ double run_twosided_test(int buffer_size, infinity::core::Context *context, infi
     }
     auto stop = chrono::high_resolution_clock::now();
 
-    utils::print("Received all messages, now sending finish signal");
+    std::cout << "Received all messages, now sending finish signal\n";
     qp->send(control_buffer, requestToken);
     requestToken->waitUntilCompleted();
 

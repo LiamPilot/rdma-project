@@ -7,9 +7,16 @@
 #include <infinity/queues/QueuePairFactory.h>
 
 #include "utils.h"
-#include "Server.h"
+#include "RunServer.h"
 #include "RunClient.h"
 #include "experiment_type.h"
+
+#include "Client.h"
+#include "Server.h"
+#include "TcpServer.h"
+#include "TcpClient.h"
+#include "RdmaClient.h"
+#include "RdmaServer.h"
 
 string get_arg_value(int argc, char* argv[], const string& arg_name, string default_value) {
     for (int i = 0; i < argc; i++) {
@@ -26,8 +33,8 @@ string get_server_ip(int argc, char* argv[]) {
     return get_arg_value(argc, argv, "-serverip", "127.0.0.1");
 }
 
-int get_tuple_size(int argc, char* argv[]) {
-    string value = get_arg_value(argc, argv, "-tuplesize", to_string(TUPLE_SIZE));
+int get_data_size(int argc, char** argv) {
+    string value = get_arg_value(argc, argv, "-datasize", to_string(DATA_SIZE));
     return std::stoi(value);
 }
 
@@ -90,25 +97,68 @@ Parrallelism get_parallelism(int argc, char* argv[]) {
     return Parrallelism::single_thread;
 }
 
-int main(int argc, char* argv[]) {
-    auto context = std::make_unique<infinity::core::Context>();
-    auto qp_factory = std::make_unique<infinity::queues::QueuePairFactory>(context.get());
+std::unique_ptr<Server> make_server(Connection connection) {
+    std::string port = to_string(PORT);
+    switch (connection) {
+        case Connection::rdma: {
+            auto context = std::make_unique<infinity::core::Context>();
+            return make_unique<RdmaServer>(std::move(context), port);
+        }
+        case Connection::tcp: {
+            return make_unique<TcpServer>(port);
+        }
+        case Connection::rpc: {
+            std::cout << "Path not made yet" << std::endl;
+            exit(-1);
+        }
+    }
+}
 
-    int tuple_size = get_tuple_size(argc, argv);
+std::unique_ptr<Client> make_client(Connection connection, std::string ip) {
+    std::string port = to_string(PORT);
+    switch (connection) {
+        case Connection::rdma: {
+            auto context = std::make_unique<infinity::core::Context>();
+            return make_unique<RdmaClient>(std::move(context), ip, port);
+        }
+        case Connection::tcp:
+            return make_unique<TcpClient>(ip, port);
+        case Connection::rpc:
+            std::cout << "Path not made yet" << std::endl;
+            exit(-1);
+    }
+}
+
+int main(int argc, char* argv[]) {
+//    auto context = std::make_unique<infinity::core::Context>();
+//    auto qp_factory = std::make_unique<infinity::queues::QueuePairFactory>(context.get());
+
+    int data_size = get_data_size(argc, argv);
     int num_tuples = get_num_tuples(argc, argv);
     DataDirection dataDirection = get_direction(argc, argv);
     Metric metric = get_test_metric(argc, argv);
+    Connection connection = get_connection_type(argc, argv);
+
 
     if (is_server(argc, argv)) {
-        utils::print("Running Server");
-        run_server(context, qp_factory, tuple_size, num_tuples, dataDirection);
+        std::cout << "Running Server\n";
+        auto server = make_server(connection);
+
+        server->run_latency_tests();
+        server->run_throughput_tests();
     } else {
-        utils::print("Running RdmaClient");
+        std::cout << "Running RdmaClient\n";
         string server_ip = get_server_ip(argc, argv);
-        run_client(context, qp_factory, server_ip, tuple_size, num_tuples, dataDirection);
+
+        auto client = make_client(connection, server_ip);
+
+        client->run_latency_tests();
+        client->run_throughput_tests();
     }
 
-    utils::print("Exiting");
+    std::cout << "Exiting\n";
 
+//    run_client(context, qp_factory, server_ip, tuple_size, num_tuples, dataDirection);
+//    run_server(context, qp_factory, tuple_size, num_tuples, dataDirection);
     return 0;
 }

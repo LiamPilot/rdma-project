@@ -2,8 +2,8 @@
 // Created by liampilot on 19/05/2020.
 //
 
-#ifndef THROUGHPUTEXPERIMENTS_RDMACLIENT_H
-#define THROUGHPUTEXPERIMENTS_RDMACLIENT_H
+#ifndef CONNECTIONEXPERIMENTS_RDMACLIENT_H
+#define CONNECTIONEXPERIMENTS_RDMACLIENT_H
 
 #include <memory>
 #include <vector>
@@ -13,33 +13,46 @@
 #include <infinity/queues/QueuePairFactory.h>
 
 #include <utils.h>
+#include "Client.h"
 
-class RdmaClient {
+class RdmaClient : public Client{
 
 public:
-    RdmaClient(const infinity::core::Context& c, const std::string& server_ip, int port) : context{c} {
-        auto qp_factory = std::make_unique<infinity::queues::QueuePairFactory>(&context);
-        queue_pair = std::unique_ptr<infinity::queues::QueuePair>{qp_factory->connectToRemoteHost(server_ip.data(), port)};
-    }
+    RdmaClient(std::unique_ptr<infinity::core::Context> c, const std::string& server_ip, const std::string& port);
 
-    std::vector<test_result> run_read_experiments(int data_size);
+    void run_throughput_tests() override;
 
-    std::vector<test_result> run_write_experiments(int data_size);
-
-    std::vector<test_result> run_two_sided_experiments(int data_size);
-
+    void run_latency_tests() override;
 
 private:
-    infinity::core::Context context;
+    std::unique_ptr<infinity::core::Context> context;
     std::unique_ptr<infinity::queues::QueuePair> queue_pair;
 
-    double read_test(int buffer_size, int data_size, infinity::memory::RegionToken* remote_buffer_token);
+    double read_tp_test(int buffer_size, int data_size, std::unique_ptr<infinity::memory::RegionToken>& remote_buffer_token);
 
-    double write_test(int buffer_size, int data_size, infinity::memory::RegionToken* remote_buffer_token,
-            infinity::memory::Buffer* local_buffer);
+    double write_tp_test(int buffer_size, int data_size, std::unique_ptr<infinity::memory::RegionToken>& remote_buffer_token,
+                         std::unique_ptr<infinity::memory::Buffer>& local_buffer);
 
-    double two_sided_test(int buffer_size, int data_size);
+    double two_sided_tp_test(int buffer_size, int data_size);
+
+    std::vector<utils::throughput_test_result> run_read_tp_tests(int data_size);
+
+    std::vector<utils::throughput_test_result> run_write_tp_tests(int data_size);
+
+    std::vector<utils::throughput_test_result> run_two_sided_tp_tests(int data_size);
+
+    double read_latency_test(int buffer_size, std::unique_ptr<infinity::memory::RegionToken>& remote_buffer_token);
+
+    double write_latency_test(int buffer_size, std::unique_ptr<infinity::memory::RegionToken>& remote_buffer_token);
+
+    double two_sided_latency_test(int buffer_size);
+
+    std::vector<utils::latency_test_result> run_read_latency_tests();
+
+    std::vector<utils::latency_test_result> run_write_latency_tests();
+
+    std::vector<utils::latency_test_result> run_two_sided_latency_tests();
 };
 
 
-#endif //THROUGHPUTEXPERIMENTS_RDMACLIENT_H
+#endif //CONNECTIONEXPERIMENTS_RDMACLIENT_H

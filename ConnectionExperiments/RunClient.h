@@ -2,10 +2,9 @@
 // Created by liampilot on 05/05/2020.
 //
 
-#ifndef THROUGHPUTEXPERIMENTS_RDMACLIENT_H
-#define THROUGHPUTEXPERIMENTS_CLIENT_H
+#ifndef CONNECTIONEXPERIMENTS_RUNCLIENT_H
+#define CONNECTIONEXPERIMENTS_RUNCLIENT_H
 
-#endif //THROUGHPUTEXPERIMENTS_RDMACLIENT_H
 
 #include <infinity/core/Context.h>
 #include <infinity/queues/QueuePairFactory.h>
@@ -25,3 +24,5 @@ double run_write_test(int, infinity::core::Context*, infinity::queues::QueuePair
 
 double run_twosided_test(int buffer_size, infinity::core::Context *context, infinity::queues::QueuePair *qp,
                          infinity::requests::RequestToken *requestToken, int data_size);
+
+#endif //CONNECTIONEXPERIMENTS_RUNCLIENT_H

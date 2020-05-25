@@ -2,27 +2,21 @@
 // Created by liampilot on 05/05/2020.
 //
 
-#ifndef THROUGHPUTEXPERIMENTS_UTILS_H
-#define THROUGHPUTEXPERIMENTS_UTILS_H
-
-#endif //THROUGHPUTEXPERIMENTS_UTILS_H
+#ifndef CONNECTIONEXPERIMENTS_UTILS_H
+#define CONNECTIONEXPERIMENTS_UTILS_H
 
 #include <string>
-
-
-
-constexpr int TUPLE_SIZE = 78;
-constexpr int NUM_TUPLES = 10000000;
-constexpr int PORT = 8001;
-
-struct test_result {
-    int buffer_size;
-    double throughput;
-};
+#include <memory>
+#include <chrono>
+#include <ifaddrs.h>
 
 namespace utils {
-    void print(const std::string&);
-    char* GenerateRandomData(int len);
+    constexpr int DATA_SIZE = 78;
+    constexpr int NUM_TUPLES = 10000000;
+    constexpr int PORT = 8001;
+
+    constexpr int num_loops = 1000;
+
     const static int buffer_sizes[] = {1024,
                                        1024 << 1,
                                        1024 << 2,
@@ -39,4 +33,25 @@ namespace utils {
                                        1024 << 13,
                                        1024 << 14,
                                        1024 << 15};
+
+    struct throughput_test_result {
+        int buffer_size;
+        double throughput;
+    };
+
+    struct latency_test_result {
+        int buffer_size;
+        double latency;
+    };
+
+    std::unique_ptr<char[]> GenerateRandomData(int len);
+
+    int get_ib_card_address(ifaddrs* address);
+
+    template<typename Clock, typename Duration>
+    double calculate_throughput(std::chrono::time_point<Clock, Duration> start,
+            std::chrono::time_point<Clock, Duration> stop, int data_size);
+
 }
+
+#endif //CONNECTIONEXPERIMENTS_UTILS_H

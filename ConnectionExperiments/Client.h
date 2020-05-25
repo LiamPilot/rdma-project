@@ -1,0 +1,18 @@
+//
+// Created by liampilot on 22/05/2020.
+//
+
+#ifndef CONNECTIONEXPERIMENTS_CLIENT_H
+#define CONNECTIONEXPERIMENTS_CLIENT_H
+
+
+class Client {
+public:
+    virtual void run_throughput_tests() = 0;
+    virtual void run_latency_tests() = 0;
+    virtual ~Client();
+
+};
+
+
+#endif //CONNECTIONEXPERIMENTS_CLIENT_H

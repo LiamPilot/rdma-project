@@ -5,24 +5,48 @@
 
 #include <iostream>
 #include <random>
+#include <regex>
 
 namespace utils {
-    void print(const std::string &str) {
-        std::cout << str << '\n';
-    }
-
-    char *GenerateRandomData(int len) {
-        char *s = (char *) malloc(sizeof(char) * len);
-        std::default_random_engine rand;
+    std::unique_ptr<char[]> GenerateRandomData(int len) {
+        char* s =  new char[len];
+        std::default_random_engine rand {};
         std::uniform_int_distribution<int> distribution(65, 90);
 
         for (int i = 0; i < len; ++i) {
             s[i] = (char) distribution(rand);
         }
 
-        utils::print("Finished filling data");
+        std::cout << "Finished filling data\n";
 
         s[len] = 0;
-        return s;
+        return std::unique_ptr<char []> {s};
+    }
+
+    int get_ib_card_address(ifaddrs* address) {
+        int status = getifaddrs(&address);
+
+        if (status < 0) {
+            std::cout << "Could not get NIC address\n" << std::endl;
+            return status;
+        }
+
+        for (; address->ifa_next != NULL; address = address->ifa_next) {
+            std::regex pattern {R"(ib\d{1})"};
+            if (std::regex_match(address->ifa_name, pattern)) {
+                return 0;
+            }
+            address = address->ifa_next;
+        }
+
+        // No ib device found
+        return -1;
+    }
+
+    template<typename Clock, typename Duration>
+    double calculate_throughput(std::chrono::time_point<Clock, Duration> start, std::chrono::time_point<Clock, Duration> stop,
+                         int data_size) {
+        auto time = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
+        return ((double) data_size) / time.count();
     }
 }
