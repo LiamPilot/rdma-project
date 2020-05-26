@@ -15,6 +15,8 @@ RdmaServer::RdmaServer(std::unique_ptr<infinity::core::Context> c, const std::st
     qp_factory.bindToPort(std::stoi(port));
 }
 
+RdmaServer::~RdmaServer() = default;
+
 void RdmaServer::wait_for_control_message() {
     infinity::memory::Buffer receive_buffer(context.get(), sizeof(char));
     context->postReceiveBuffer(&receive_buffer);
@@ -152,7 +154,9 @@ void RdmaServer::two_sided_latency_test(int buffer_size) {
     for (int i = 0; i < utils::num_loops; i++) {
         infinity::memory::Buffer buffer(context.get(), buffer_size);
         context->postReceiveBuffer(&buffer);
-        infinity::core::receive_element_t receive_elem { .buffer = &buffer, .queuePair = qp.get() };
+        infinity::core::receive_element_t receive_elem {};
+        receive_elem.buffer = &buffer;
+        receive_elem.queuePair = qp.get();
         while (!context->receive(&receive_elem));
         if (receive_elem.bytesWritten < buffer_size) {
             std::cout << "Not all bytes received from a send" << std::endl;
@@ -161,3 +165,4 @@ void RdmaServer::two_sided_latency_test(int buffer_size) {
 
     wait_for_control_message();
 }
+

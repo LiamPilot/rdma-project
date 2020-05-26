@@ -5,6 +5,7 @@
 #include "RdmaClient.h"
 
 #include <memory>
+#include <utility>
 #include <vector>
 #include <chrono>
 #include <iostream>
@@ -14,8 +15,11 @@
 
 #include "utils.h"
 
-RdmaClient::RdmaClient(std::unique_ptr<infinity::core::Context> c, const std::string &ip, const std::string &port)
-: context(std::move(c)), qp_factory(context.get()), server_ip(ip), server_port(std::stoi(port)) {}
+RdmaClient::RdmaClient(std::unique_ptr<infinity::core::Context> c, std::string ip, const std::string& port)
+: context(std::move(c)), qp_factory(context.get()), server_ip(std::move(ip)), server_port(std::stoi(port)) {}
+
+
+RdmaClient::~RdmaClient() = default;
 
 std::unique_ptr<infinity::queues::QueuePair> RdmaClient::connect_to_remote_buffer() {
     auto queue_pair = std::unique_ptr<infinity::queues::QueuePair>
@@ -187,7 +191,9 @@ double RdmaClient::two_sided_tp_test(int buffer_size, int data_size, std::unique
 
     for (int x = 0; x < data_size; x += buffer_size) {
         context->postReceiveBuffer(&buffer);
-        infinity::core::receive_element_t receive_elem { .buffer = &buffer, .queuePair = queue_pair.get()};
+        infinity::core::receive_element_t receive_elem {};
+        receive_elem.buffer = &buffer;
+        receive_elem.queuePair = queue_pair.get();
         while (!context->receive(&receive_elem));
     }
 
@@ -332,5 +338,6 @@ double RdmaClient::two_sided_latency_test(int buffer_size) {
     double sum = std::accumulate(latencies.begin(), latencies.end(), 0.0);
     return sum / utils::num_loops;
 }
+
 
 

@@ -22,6 +22,8 @@ public:
 
     void run_latency_tests() override;
 
+    ~RdmaServer() override;
+
 private:
     std::unique_ptr<infinity::core::Context> context;
     infinity::queues::QueuePairFactory qp_factory;

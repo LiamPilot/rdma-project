@@ -18,7 +18,7 @@ void run_client(infinity::core::Context *context, infinity::queues::QueuePairFac
         const string server_ip, int tuple_size, int num_tuples, DataDirection dataDirection) {
     std::ofstream results_file;
     results_file.open("results.txt");
-    auto *qp = qp_factory->connectToRemoteHost(server_ip.data(), PORT);
+    auto *qp = qp_factory->connectToRemoteHost(server_ip.data(), utils::PORT);
     auto remote_buffer_token = (infinity::memory::RegionToken*) qp->getUserData();
     infinity::requests::RequestToken requestToken(context);
 
@@ -26,8 +26,8 @@ void run_client(infinity::core::Context *context, infinity::queues::QueuePairFac
     switch (dataDirection) {
         case DataDirection::write: {
             int data_size = tuple_size * num_tuples;
-            char *data = utils::GenerateRandomData(data_size);
-            auto *local_buffer = new infinity::memory::Buffer(context, data, data_size * sizeof(char));
+            auto data = utils::GenerateRandomData(data_size);
+            auto *local_buffer = new infinity::memory::Buffer(context, data.get(), data_size * sizeof(char));
 
             for (int buffer_size : utils::buffer_sizes) {
                 double throughput = run_write_test(buffer_size, context, qp, remote_buffer_token, &requestToken,
@@ -35,7 +35,6 @@ void run_client(infinity::core::Context *context, infinity::queues::QueuePairFac
                 results_file << buffer_size << " " << throughput << endl;
             }
 
-            free(data);
             delete local_buffer;
             break;
         }

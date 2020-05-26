@@ -53,9 +53,11 @@ namespace utils {
     int get_ib_card_address(ifaddrs* address);
 
     template<typename Clock, typename Duration>
-    double calculate_throughput(std::chrono::time_point<Clock, Duration> start,
-            std::chrono::time_point<Clock, Duration> stop, int data_size);
-
+    double calculate_throughput(std::chrono::time_point<Clock, Duration> start, std::chrono::time_point<Clock, Duration> stop,
+                                int data_size) {
+        auto time = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
+        return ((double) data_size) / time.count();
+    }
     std::unique_ptr<infinity::memory::Buffer> create_large_buffer(int data_size,
             std::unique_ptr<infinity::core::Context>& context);
 }

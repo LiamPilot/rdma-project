@@ -10,8 +10,7 @@ class Client {
 public:
     virtual void run_throughput_tests(int data_size) = 0;
     virtual void run_latency_tests() = 0;
-    virtual ~Client();
-
+    virtual ~Client() = default;
 };
 
 

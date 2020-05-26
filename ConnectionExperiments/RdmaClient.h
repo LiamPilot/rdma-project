@@ -18,11 +18,13 @@
 class RdmaClient : public Client{
 
 public:
-    RdmaClient(std::unique_ptr<infinity::core::Context> c, const std::string& ip, const std::string& port);
+    RdmaClient(std::unique_ptr<infinity::core::Context> c, std::string  ip, const std::string& port);
 
     void run_throughput_tests(int data_size) override;
 
     void run_latency_tests() override;
+
+    ~RdmaClient() override;
 
 private:
     std::unique_ptr<infinity::core::Context> context;

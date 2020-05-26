@@ -10,29 +10,28 @@
 #include <iostream>
 
 
-run_server(std::unique_ptr<infinity::core::Context> context, infinity::queues::QueuePairFactory *qp_factory, int tuple_size,
+void run_server(std::unique_ptr<infinity::core::Context> context, infinity::queues::QueuePairFactory *qp_factory, int tuple_size,
            int num_tuples, DataDirection dataDirection) {
 
     if (dataDirection == DataDirection::write) {
-        receive_test_data(context, qp_factory, tuple_size * num_tuples);
+        receive_test_data(context.get(), qp_factory, tuple_size * num_tuples);
     } else if (dataDirection == DataDirection::read) {
-        serve_test_data(context, qp_factory, tuple_size, num_tuples);
+        serve_test_data(context.get(), qp_factory, tuple_size, num_tuples);
     } else if (dataDirection != DataDirection::two_sided) {
         std::cout << "Connecting to client\n";
-        qp_factory->bindToPort(PORT);
-        auto buffer = new infinity::memory::Buffer(context, sizeof(char));
+        qp_factory->bindToPort(utils::PORT);
+        auto buffer = new infinity::memory::Buffer(context.get(), sizeof(char));
         auto buffer_token = buffer->createRegionToken();
         auto qp = qp_factory->acceptIncomingConnection(buffer_token, sizeof(infinity::memory::RegionToken));
 
         std::cout << "generating data\n";
-        char *data = utils::GenerateRandomData(tuple_size * num_tuples);
+        auto data = utils::GenerateRandomData(tuple_size * num_tuples);
 
         std::cout << "Doing two sided test\n";
         for (int buffer_size : utils::buffer_sizes) {
-            send_test_data(buffer_size, context, qp, data, tuple_size * num_tuples);
+            send_test_data(buffer_size, context.get(), qp, data.get(), tuple_size * num_tuples);
         }
 
-        free(data);
         delete qp;
         delete buffer;
         delete buffer_token;
@@ -52,19 +51,18 @@ void serve_test_data(infinity::core::Context *context, infinity::queues::QueuePa
                      int num_tuples) {
     std::cout << "Creating random data\n";
     auto data_size = tuple_size * num_tuples;
-    char *data = utils::GenerateRandomData(data_size);
+    auto data = utils::GenerateRandomData(data_size);
 
     std::cout << "Creating Buffer with Data\n";
-    auto data_buffer = new infinity::memory::Buffer(context, data, data_size * sizeof(char));
+    auto data_buffer = new infinity::memory::Buffer(context, data.get(), data_size * sizeof(char));
     auto buffer_token = data_buffer->createRegionToken();
-    qp_factory->bindToPort(PORT);
+    qp_factory->bindToPort(utils::PORT);
     auto qp = qp_factory->acceptIncomingConnection(buffer_token, sizeof(infinity::memory::RegionToken));
 
     std::cout << "Waiting for client to finish\n";
     waitForControlMessage(context);
 
     std::cout << "Done, cleaning up\n";
-    free(data);
     delete data_buffer;
     delete qp;
 }
@@ -72,7 +70,7 @@ void serve_test_data(infinity::core::Context *context, infinity::queues::QueuePa
 void receive_test_data(infinity::core::Context *context, infinity::queues::QueuePairFactory *qp_factory, int data_size) {
     auto data_buffer = new infinity::memory::Buffer(context, data_size * sizeof(char));
     auto buffer_token = data_buffer->createRegionToken();
-    qp_factory->bindToPort(PORT);
+    qp_factory->bindToPort(utils::PORT);
 
     std::cout << "Ready for test\n";
     auto qp = qp_factory->acceptIncomingConnection(buffer_token, sizeof(infinity::memory::RegionToken));
