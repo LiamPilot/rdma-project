@@ -22,7 +22,7 @@ public:
 
 private:
     const char* throughput_file_name = "tcp_throughput.txt";
-    const char* latency_file_name = "tcp_throughput.txt";
+    const char* latency_file_name = "tcp_latency.txt";
 
     int server_socket;
 

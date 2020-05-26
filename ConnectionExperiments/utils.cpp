@@ -6,24 +6,38 @@
 #include <iostream>
 #include <random>
 #include <regex>
+#include <fcntl.h>
+#include <unistd.h>
 
 namespace utils {
     std::unique_ptr<char[]> GenerateRandomData(int len) {
         char* s = new char[len];
-        std::default_random_engine rand {};
-        std::uniform_int_distribution<int> distribution(65, 90);
+        dev_random_data(s, len);
+//        std::default_random_engine rand {};
+//        std::uniform_int_distribution<int> distribution(65, 90);
+//        std::cout << "Finished filling data\n";
+        return std::unique_ptr<char []> {s};
+    }
+
+    void random_data(char* s, int len) {
+        static std::default_random_engine rand {};
+        static std::uniform_int_distribution<int> distribution(65, 90);
 
         for (int i = 0; i < len; ++i) {
             s[i] = (char) distribution(rand);
         }
 
-        std::cout << "Finished filling data\n";
-
         s[len] = 0;
-        return std::unique_ptr<char []> {s};
     }
 
-    int get_ib_card_address(ifaddrs* address) {
+
+    void dev_random_data(char* data, int size) {
+        int fd = open("/dev/urandom", O_RDONLY);
+        read(fd, data, size);
+    }
+
+    int get_ib_card_address(ifaddrs* out_address) {
+        ifaddrs* address;
         int status = getifaddrs(&address);
 
         if (status < 0) {
@@ -31,16 +45,19 @@ namespace utils {
             return status;
         }
 
-        for (; address->ifa_next != NULL; address = address->ifa_next) {
-            std::regex pattern {R"(ib\d{1})"};
-            if (std::regex_match(address->ifa_name, pattern)) {
-                return 0;
+        bool found = false;
+        for (; address != nullptr; address = address->ifa_next) {
+            if (!found && address->ifa_name[0] == 'i' && address->ifa_name[1] == 'b') {
+                found = true;
+                *out_address = *address;
             }
-            address = address->ifa_next;
         }
 
-        // No ib device found
-        return -1;
+        if (!found) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
 
     std::unique_ptr<infinity::memory::Buffer> create_large_buffer(int data_size,

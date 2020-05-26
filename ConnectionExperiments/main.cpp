@@ -53,7 +53,7 @@ Metric get_test_metric(int argc, char* argv[]) {
 }
 
 Connection get_connection_type(int argc, char* argv[]) {
-    string value = get_arg_value(argc, argv, "-metric", "rdma");
+    string value = get_arg_value(argc, argv, "-connection", "rdma");
     if (value == "rdma") {
         return Connection::rdma;
     } else if (value == "tcp") {
@@ -143,7 +143,7 @@ int main(int argc, char* argv[]) {
 
 
     if (is_server(argc, argv)) {
-        std::cout << "Running Server\n";
+//        std::cout << "Running Server\n";
         auto server = make_server(connection);
 
         server->run_latency_tests();

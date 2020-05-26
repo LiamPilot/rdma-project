@@ -23,7 +23,7 @@ public:
 
 private:
     int client_socket;
-    sockaddr_storage client_address;
+//    sockaddr_storage client_address;
 
     double latency_test(int buffer_size);
 
