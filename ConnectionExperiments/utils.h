@@ -9,11 +9,14 @@
 #include <memory>
 #include <chrono>
 #include <ifaddrs.h>
+#include <infinity/memory/Buffer.h>
+#include <infinity/core/Context.h>
 
 namespace utils {
-    constexpr int DATA_SIZE = 78;
+    constexpr int DATA_SIZE = 78 * 10000000;
     constexpr int NUM_TUPLES = 10000000;
     constexpr int PORT = 8001;
+    constexpr int MAX_BUFFER_SIZE = 1024 << 15;
 
     constexpr int num_loops = 1000;
 
@@ -34,6 +37,7 @@ namespace utils {
                                        1024 << 14,
                                        1024 << 15};
 
+
     struct throughput_test_result {
         int buffer_size;
         double throughput;
@@ -52,6 +56,8 @@ namespace utils {
     double calculate_throughput(std::chrono::time_point<Clock, Duration> start,
             std::chrono::time_point<Clock, Duration> stop, int data_size);
 
+    std::unique_ptr<infinity::memory::Buffer> create_large_buffer(int data_size,
+            std::unique_ptr<infinity::core::Context>& context);
 }
 
 #endif //CONNECTIONEXPERIMENTS_UTILS_H

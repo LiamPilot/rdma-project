@@ -9,7 +9,7 @@
 
 namespace utils {
     std::unique_ptr<char[]> GenerateRandomData(int len) {
-        char* s =  new char[len];
+        char* s = new char[len];
         std::default_random_engine rand {};
         std::uniform_int_distribution<int> distribution(65, 90);
 
@@ -48,5 +48,11 @@ namespace utils {
                          int data_size) {
         auto time = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
         return ((double) data_size) / time.count();
+    }
+
+    std::unique_ptr<infinity::memory::Buffer> create_large_buffer(int data_size,
+            std::unique_ptr<infinity::core::Context>& context) {
+        auto data = utils::GenerateRandomData(data_size);
+        return std::make_unique<infinity::memory::Buffer>(context.get(), data.get(), data_size * sizeof(char));
     }
 }

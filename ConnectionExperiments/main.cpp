@@ -34,12 +34,12 @@ string get_server_ip(int argc, char* argv[]) {
 }
 
 int get_data_size(int argc, char** argv) {
-    string value = get_arg_value(argc, argv, "-datasize", to_string(DATA_SIZE));
+    string value = get_arg_value(argc, argv, "-datasize", to_string(utils::DATA_SIZE));
     return std::stoi(value);
 }
 
 int get_num_tuples(int argc, char* argv[]) {
-    string value = get_arg_value(argc, argv, "-numtuples", to_string(NUM_TUPLES));
+    string value = get_arg_value(argc, argv, "-numtuples", to_string(utils::NUM_TUPLES));
     return std::stoi(value);
 }
 
@@ -58,9 +58,11 @@ Connection get_connection_type(int argc, char* argv[]) {
         return Connection::rdma;
     } else if (value == "tcp") {
         return Connection::tcp;
-    } else {
+    } else if (value == "rpc") {
         return Connection::rpc;
     }
+
+    return Connection::rdma;
 }
 
 bool is_server(int argc, char* argv[]) {
@@ -98,7 +100,7 @@ Parrallelism get_parallelism(int argc, char* argv[]) {
 }
 
 std::unique_ptr<Server> make_server(Connection connection) {
-    std::string port = to_string(PORT);
+    std::string port = to_string(utils::PORT);
     switch (connection) {
         case Connection::rdma: {
             auto context = std::make_unique<infinity::core::Context>();
@@ -115,7 +117,7 @@ std::unique_ptr<Server> make_server(Connection connection) {
 }
 
 std::unique_ptr<Client> make_client(Connection connection, std::string ip) {
-    std::string port = to_string(PORT);
+    std::string port = to_string(utils::PORT);
     switch (connection) {
         case Connection::rdma: {
             auto context = std::make_unique<infinity::core::Context>();
@@ -145,7 +147,7 @@ int main(int argc, char* argv[]) {
         auto server = make_server(connection);
 
         server->run_latency_tests();
-        server->run_throughput_tests();
+        server->run_throughput_tests(data_size);
     } else {
         std::cout << "Running RdmaClient\n";
         string server_ip = get_server_ip(argc, argv);
@@ -153,7 +155,7 @@ int main(int argc, char* argv[]) {
         auto client = make_client(connection, server_ip);
 
         client->run_latency_tests();
-        client->run_throughput_tests();
+        client->run_throughput_tests(data_size);
     }
 
     std::cout << "Exiting\n";

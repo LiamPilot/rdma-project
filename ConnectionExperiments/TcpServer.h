@@ -8,15 +8,16 @@
 #include "Server.h"
 
 #include <string>
+#include <memory>
 #include <sys/socket.h>
 
 class TcpServer : public Server {
 public:
     TcpServer(std::string port);
 
-    ~TcpServer() override = default;
+    ~TcpServer() override;
 
-    void run_throughput_tests() override;
+    void run_throughput_tests(int data_size) override;
 
     void run_latency_tests() override;
 
@@ -26,7 +27,9 @@ private:
 
     double latency_test(int buffer_size);
 
-    std::string receive_message(int buffer_size) const;
+    void receive_message(int buffer_size, char* data) const;
+
+    void throughput_test(int buffer_size, int data_size);
 };
 
 
