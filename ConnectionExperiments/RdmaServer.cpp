@@ -5,13 +5,12 @@
 #include "RdmaServer.h"
 
 #include <iostream>
-
 #include <infinity/memory/Buffer.h>
 
-#include <utils.h>
+#include "utils.h"
 
-RdmaServer::RdmaServer(std::unique_ptr<infinity::core::Context> c, const std::string& port)
-: qp_factory(c.get()), context(std::move(c)) {
+RdmaServer::RdmaServer(const std::string& port)
+: context(new infinity::core::Context()), qp_factory(context.get()) {
     qp_factory.bindToPort(std::stoi(port));
 }
 
@@ -24,12 +23,22 @@ void RdmaServer::wait_for_control_message() {
     while (!context->receive(&receive_elem));
 }
 
-void RdmaServer::run_throughput_tests(int data_size) {
+void RdmaServer::send_control_message(std::unique_ptr<infinity::queues::QueuePair>& queue_pair) {
+    infinity::memory::Buffer control_buffer(context.get(), 1);
+    auto request_token = context->defaultRequestToken;
+    queue_pair->send(&control_buffer, request_token);
+    request_token->waitUntilCompleted();
+}
 
+void RdmaServer::run_throughput_tests(int data_size) {
+    std::cout << "Throughput tests ready\n";
+    run_read_tp_tests(data_size);
+    run_write_tp_tests(data_size);
+    run_two_sided_tp_tests(data_size);
 }
 
 void RdmaServer::run_read_tp_tests(int data_size) {
-    std::unique_ptr<char[]> data = utils::GenerateRandomData(data_size);
+    std::unique_ptr<char[]> data = std::make_unique<char[]>(data_size);
 
     infinity::memory::Buffer data_buffer(context.get(), data.get(), data_size * sizeof(char));
     auto buffer_token = std::unique_ptr<infinity::memory::RegionToken> {data_buffer.createRegionToken()};
@@ -37,6 +46,13 @@ void RdmaServer::run_read_tp_tests(int data_size) {
     std::cout << "Ready to connect\n";
     auto qp = std::unique_ptr<infinity::queues::QueuePair>
             {qp_factory.acceptIncomingConnection(buffer_token.get(), sizeof(infinity::memory::RegionToken))};
+
+    for (int __ : utils::buffer_sizes) {
+        utils::dev_random_data(data.get(), data_size);
+        send_control_message(qp);
+        wait_for_control_message();
+        std::cout << "refilling data\n";
+    }
 
     wait_for_control_message();
 
@@ -49,6 +65,13 @@ void RdmaServer::run_write_tp_tests(int data_size) {
 
     auto qp =  std::unique_ptr<infinity::queues::QueuePair>
             {qp_factory.acceptIncomingConnection(buffer_token.get(), sizeof(infinity::memory::RegionToken))};
+
+    for (int __ : utils::buffer_sizes) {
+        memset(buffer.getData(), 0, data_size);
+        send_control_message(qp);
+        wait_for_control_message();
+        std::cout << "refilling data\n";
+    }
 
     wait_for_control_message();
 }
@@ -138,16 +161,19 @@ void RdmaServer::run_write_latency_tests() {
 
 
 void RdmaServer::run_two_sided_latency_tests() {
+    infinity::memory::Buffer data_buffer(context.get(), utils::MAX_BUFFER_SIZE * sizeof(char));
+    auto buffer_token = std::unique_ptr<infinity::memory::RegionToken> {data_buffer.createRegionToken()};
+
+    std::cout << "Ready to connect\n";
+    auto qp = std::unique_ptr<infinity::queues::QueuePair>
+            {qp_factory.acceptIncomingConnection(buffer_token.get(), sizeof(infinity::memory::RegionToken))};
+
     for (int buffer_size : utils::buffer_sizes) {
-        two_sided_latency_test(buffer_size);
+        two_sided_latency_test(buffer_size, qp);
     }
 }
 
-void RdmaServer::two_sided_latency_test(int buffer_size) {
-    infinity::memory::Buffer data_buffer(context.get(), buffer_size * sizeof(char));
-    auto buffer_token = std::unique_ptr<infinity::memory::RegionToken> {data_buffer.createRegionToken()};
-    auto qp = std::unique_ptr<infinity::queues::QueuePair>
-            {qp_factory.acceptIncomingConnection(buffer_token.get(), sizeof(infinity::memory::RegionToken))};
+void RdmaServer::two_sided_latency_test(int buffer_size, std::unique_ptr<infinity::queues::QueuePair>& queue_pair) {
 
     wait_for_control_message();
 
@@ -156,7 +182,7 @@ void RdmaServer::two_sided_latency_test(int buffer_size) {
         context->postReceiveBuffer(&buffer);
         infinity::core::receive_element_t receive_elem {};
         receive_elem.buffer = &buffer;
-        receive_elem.queuePair = qp.get();
+        receive_elem.queuePair = queue_pair.get();
         while (!context->receive(&receive_elem));
         if (receive_elem.bytesWritten < buffer_size) {
             std::cout << "Not all bytes received from a send" << std::endl;

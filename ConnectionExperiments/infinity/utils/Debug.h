@@ -8,6 +8,8 @@
 
 #ifndef UTILS_DEBUG_H_
 #define UTILS_DEBUG_H_
+//#define INFINITY_DEBUG_ON
+//#define INFINITY_ASSERT_ON
 
 #include <stdio.h>
 #include <stdlib.h>

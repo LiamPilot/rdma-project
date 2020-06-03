@@ -44,12 +44,16 @@ int get_num_tuples(int argc, char* argv[]) {
 }
 
 Metric get_test_metric(int argc, char* argv[]) {
-    string value = get_arg_value(argc, argv, "-metric", "t");
+    string value = get_arg_value(argc, argv, "-metric", "all");
     if (value == "t") {
         return Metric::throughput;
-    } else {
+    } else if (value == "l") {
         return Metric::latency;
+    } else if (value == "all") {
+        return Metric::all;
     }
+
+    return Metric::all;
 }
 
 Connection get_connection_type(int argc, char* argv[]) {
@@ -103,8 +107,7 @@ std::unique_ptr<Server> make_server(Connection connection) {
     std::string port = to_string(utils::PORT);
     switch (connection) {
         case Connection::rdma: {
-            auto context = std::make_unique<infinity::core::Context>();
-            return make_unique<RdmaServer>(std::move(context), port);
+            return make_unique<RdmaServer>(port);
         }
         case Connection::tcp: {
             return make_unique<TcpServer>(port);
@@ -120,8 +123,7 @@ std::unique_ptr<Client> make_client(Connection connection, std::string ip) {
     std::string port = to_string(utils::PORT);
     switch (connection) {
         case Connection::rdma: {
-            auto context = std::make_unique<infinity::core::Context>();
-            return make_unique<RdmaClient>(std::move(context), ip, port);
+            return make_unique<RdmaClient>(ip, port);
         }
         case Connection::tcp:
             return make_unique<TcpClient>(ip, port);
@@ -146,16 +148,36 @@ int main(int argc, char* argv[]) {
 //        std::cout << "Running Server\n";
         auto server = make_server(connection);
 
-        server->run_latency_tests();
-        server->run_throughput_tests(data_size);
+        switch (metric) {
+            case Metric::throughput:
+                server->run_throughput_tests(data_size);
+                break;
+            case Metric::latency:
+                server->run_latency_tests();
+                break;
+            case Metric::all:
+                server->run_throughput_tests(data_size);
+                server->run_latency_tests();
+                break;
+        }
     } else {
-        std::cout << "Running RdmaClient\n";
+//        std::cout << "Running Client\n";
         string server_ip = get_server_ip(argc, argv);
 
         auto client = make_client(connection, server_ip);
 
-        client->run_latency_tests();
-        client->run_throughput_tests(data_size);
+        switch (metric) {
+            case Metric::throughput:
+                client->run_throughput_tests(data_size);
+                break;
+            case Metric::latency:
+                client->run_latency_tests();
+                break;
+            case Metric::all:
+                client->run_throughput_tests(data_size);
+                client->run_latency_tests();
+                break;
+        }
     }
 
     std::cout << "Exiting\n";

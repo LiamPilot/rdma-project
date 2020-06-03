@@ -16,7 +16,7 @@
 class RdmaServer : public Server {
 
 public:
-    RdmaServer(std::unique_ptr<infinity::core::Context> c, const std::string& port);
+    explicit RdmaServer(const std::string& port);
 
     void run_throughput_tests(int data_size) override;
 
@@ -44,7 +44,9 @@ private:
 
     void wait_for_control_message();
 
-    void two_sided_latency_test(int buffer_size);
+    void two_sided_latency_test(int buffer_size, std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
+
+    void send_control_message(std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
 };
 
 

@@ -85,7 +85,7 @@ void TcpServer::throughput_test(int buffer_size, int data_size) {
     char* little_buffer = new char[buffer_size];
     for (int offset = 0; offset < last_index; offset += buffer_size) {
         receive_message(buffer_size, data.get() + offset);
-        memcpy(little_buffer, data.get(), buffer_size);
+//        memcpy(little_buffer, data.get(), buffer_size);
     }
     receive_message(data_size % buffer_size, data.get() + last_index);
     memcpy(little_buffer, data.get(), buffer_size);
@@ -106,7 +106,7 @@ double TcpServer::latency_test(int buffer_size) {
     for (int i = 0; i < utils::num_loops; i++) {
         memset(data, 0, buffer_size);
         receive_message(buffer_size, data);
-        memcpy(little_buffer, data, buffer_size);
+//        memcpy(little_buffer, data, buffer_size);
     }
     delete[] little_buffer;
     delete[] data;
