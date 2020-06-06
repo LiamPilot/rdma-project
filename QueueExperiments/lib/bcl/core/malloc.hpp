@@ -6,6 +6,7 @@
 
 #include <bcl/bcl.hpp>
 #include <bcl/core/GlobalPtr.hpp>
+#include <iostream>
 
 namespace BCL {
 
@@ -136,6 +137,7 @@ inline void local_free(const GlobalPtr <T> &ptr) {
   if (bcl_finalized) {
     return;
   }
+  std::cout << "inside local free\n";
   BCL::malloc_mutex.lock();
   char *vptr = (char *) ptr.local();
 
@@ -149,12 +151,14 @@ inline void local_free(const GlobalPtr <T> &ptr) {
 
   // Keep free list in order to
   // make compaction easy
+  std::cout << "before loop\n";
   while (neighbor_chunk != NULL) {
     if (my_chunk > neighbor_chunk) {
       break;
     }
     neighbor_chunk = neighbor_chunk->next;
   }
+  std::cout << "after loop\n";
 
   // I am the primordial chunk.
   if (neighbor_chunk == NULL) {
@@ -186,6 +190,7 @@ inline void local_free(const GlobalPtr <T> &ptr) {
       }
     }
   }
+
 
   // Compact!
 

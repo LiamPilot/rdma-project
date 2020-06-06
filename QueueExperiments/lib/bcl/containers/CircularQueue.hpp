@@ -37,6 +37,8 @@ struct CircularQueueAL {
   }
 };
 
+static int barrier_num = 0;
+
 template <typename T, typename TSerialize = BCL::serialize <T>>
 struct CircularQueue {
   BCL::Array <T, TSerialize> data;
@@ -195,9 +197,8 @@ struct CircularQueue {
   bool push_atomic_impl_(const T &val, bool synchronized = false) {
     int old_tail = BCL::fetch_and_op<int>(tail, 1, BCL::plus<int>{});
     int new_tail = old_tail + 1;
-
     if (new_tail - head_buf > capacity()) {
-      // head_buf = BCL::rget(reserved_head);
+        // head_buf = BCL::rget(reserved_head);
       if (synchronized) {
         Backoff backoff;
         while (new_tail - head_buf > capacity()) {
@@ -207,14 +208,22 @@ struct CircularQueue {
           }
         }
       } else {
-        head_buf = BCL::fetch_and_op<int>(reserved_head, 0, BCL::plus<int>{});
+          head_buf = BCL::fetch_and_op<int>(reserved_head, 0, BCL::plus<int>{});
       }
       if (new_tail - head_buf > capacity()) {
         BCL::fetch_and_op<int>(tail, -1, BCL::plus<int>{});
         return false;
       }
     }
-    data[old_tail % capacity()] = val;
+
+    int i = old_tail % capacity();
+    if (barrier_num == 6) {
+        printf("Index: %d\n", i);
+        std::cout << "Value: " << val << "\n";
+        std::cout << "Data[i]: " << data.get(i) << "\n";
+    }
+    data.put(i, val);
+    if (barrier_num == 6) printf("backoff or I'll lamp you\n");
     BCL::flush();
     int rv;
     Backoff backoff;
@@ -458,9 +467,9 @@ struct CircularQueue {
            CircularQueueAL atomicity_level = CircularQueueAL::push |
            CircularQueueAL::pop) {
     if (atomicity_level & CircularQueueAL::push) {
-      return pop_atomic_impl_(vals);
+      return pop_atomic_impl_(vals, n_to_pop);
     } else {
-      return pop_nonatomic_impl_(vals);
+      return pop_nonatomic_impl_(vals, n_to_pop);
     }
   }
 
@@ -468,35 +477,42 @@ struct CircularQueue {
     vals.resize(n_to_pop);
 
     int old_head = BCL::fetch_and_op<int>(head, n_to_pop, BCL::plus<int>());
-    int new_head = old_head + 1;
+    int new_head = old_head + n_to_pop;
 
     if (new_head > tail_buf) {
       tail_buf = BCL::fetch_and_op<int>(reserved_tail, 0, BCL::plus<int>{});
       if (new_head > tail_buf) {
         BCL::fetch_and_op <int> (head, -n_to_pop, BCL::plus <int> ());
+//        printf("bad if\n");
         return false;
       }
-    } else {
-
-      if ((old_head % capacity()) + vals.size() < capacity()) {
-        data.get(old_head % capacity(), vals, n_to_pop);
-      } else {
-        size_t first_get_nelem = capacity() - (old_head % capacity());
-        data.get(0, vals.data(), n_to_pop - first_get_nelem);
-      }
-
-      // BCL::flush() (implicit)
-
-      int rv;
-      Backoff backoff;
-      do {
-        rv = BCL::compare_and_swap<int>(reserved_head, old_head, old_head + n_to_pop);
-        if (rv != old_head) {
-          backoff.backoff();
-        }
-      } while (rv != old_head);
-      return true;
+//      printf("oh no\n");
     }
+
+    if ((old_head % capacity()) + vals.size() < capacity()) {
+      // contiguous reads, e.g.:  000000001111111000000
+      data.get(old_head % capacity(), vals, n_to_pop);
+    } else {
+      // split reads, e.g.: 1110000000000111
+      //                      ^end       ^start
+      size_t first_get_nelem = capacity() - (old_head % capacity());
+//      printf("[%s]: old head: %d, capacity: %d, first_get_nelem: %lu\n", BCL::hostname().c_str(), old_head, capacity(), first_get_nelem);
+      data.get(old_head % capacity(), vals.data(), first_get_nelem);
+      data.get(0, vals.data() + first_get_nelem, n_to_pop - first_get_nelem);
+    }
+
+    // BCL::flush() (implicit)
+
+    int rv;
+    Backoff backoff;
+    do {
+      rv = BCL::compare_and_swap<int>(reserved_head, old_head, new_head);
+      if (rv != old_head) {
+        backoff.backoff();
+      }
+    } while (rv != old_head);
+    return true;
+//    printf("ah shit\n");
   }
 
   bool pop_nonatomic_impl_(std::vector <T> &vals, size_t n_to_pop) {
