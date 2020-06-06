@@ -37,8 +37,6 @@ struct CircularQueueAL {
   }
 };
 
-static int barrier_num = 0;
-
 template <typename T, typename TSerialize = BCL::serialize <T>>
 struct CircularQueue {
   BCL::Array <T, TSerialize> data;
@@ -208,7 +206,7 @@ struct CircularQueue {
           }
         }
       } else {
-          head_buf = BCL::fetch_and_op<int>(reserved_head, 0, BCL::plus<int>{});
+        head_buf = BCL::fetch_and_op<int>(reserved_head, 0, BCL::plus<int>{});
       }
       if (new_tail - head_buf > capacity()) {
         BCL::fetch_and_op<int>(tail, -1, BCL::plus<int>{});
@@ -216,14 +214,7 @@ struct CircularQueue {
       }
     }
 
-    int i = old_tail % capacity();
-    if (barrier_num == 6) {
-        printf("Index: %d\n", i);
-        std::cout << "Value: " << val << "\n";
-        std::cout << "Data[i]: " << data.get(i) << "\n";
-    }
-    data.put(i, val);
-    if (barrier_num == 6) printf("backoff or I'll lamp you\n");
+    data[old_tail % capacity()] = val;
     BCL::flush();
     int rv;
     Backoff backoff;
@@ -483,10 +474,8 @@ struct CircularQueue {
       tail_buf = BCL::fetch_and_op<int>(reserved_tail, 0, BCL::plus<int>{});
       if (new_head > tail_buf) {
         BCL::fetch_and_op <int> (head, -n_to_pop, BCL::plus <int> ());
-//        printf("bad if\n");
         return false;
       }
-//      printf("oh no\n");
     }
 
     if ((old_head % capacity()) + vals.size() < capacity()) {
@@ -496,7 +485,6 @@ struct CircularQueue {
       // split reads, e.g.: 1110000000000111
       //                      ^end       ^start
       size_t first_get_nelem = capacity() - (old_head % capacity());
-//      printf("[%s]: old head: %d, capacity: %d, first_get_nelem: %lu\n", BCL::hostname().c_str(), old_head, capacity(), first_get_nelem);
       data.get(old_head % capacity(), vals.data(), first_get_nelem);
       data.get(0, vals.data() + first_get_nelem, n_to_pop - first_get_nelem);
     }

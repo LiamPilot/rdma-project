@@ -179,7 +179,6 @@ namespace BCL {
     void free() {
       // TODO: memory leak.
       if (this->ptr != nullptr && this->ptr.is_local()) {
-        std::cout << "It has literally freed it\n";
         BCL::dealloc(this->ptr);
       }
     }
@@ -197,9 +196,7 @@ namespace BCL {
     void set(const T &val, uint64_t rank = BCL::rank()) {
       // TODO: memory leak.
       if (this->ptr != nullptr && this->ptr.is_local()) {
-        std::cout << "big set\n";
         BCL::dealloc(this->ptr);
-        std::cout << "please end\n";
       }
       serial_ptr <SPT> ptr = Serialize{}(val);
       this->ptr = BCL::alloc <SPT> (ptr.N);

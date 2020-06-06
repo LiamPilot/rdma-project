@@ -46,7 +46,6 @@ void master(BCL::CircularQueue<int>& queue, BCL::CircularQueue<int>& control_que
 
     int num_pushes = std::floor((double) queue_size / (double) buf_size);
     loud_barrier();
-    BCL::barrier_num = barrier_num;
     auto start = std::chrono::high_resolution_clock::now();
     printf("[%s]: Size before pushing: %lu\n", BCL::hostname().c_str(), queue.size());
     for (int i = 0; i < num_pushes; i++) {

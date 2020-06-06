@@ -32,7 +32,6 @@ namespace BCL {
     using CT = typename BCL::Container <T, TSerialize>;
 
     CT container = BCL::rget(dst);
-    std::cout << "this one\n";
     container.set(src);
     BCL::rput(container, dst);
   }
@@ -113,7 +112,6 @@ namespace BCL {
   {
     using CT = typename BCL::Container <T, TSerialize>;
     CT container = BCL::rget(dst);
-    std::cout << "before the big fucking free agghghghgh free\n";
     container.free();
     BCL::rput(container, dst);
   }
@@ -211,7 +209,7 @@ namespace BCL {
 
     T get(size_t idx) {
       if (idx >= size()) {
-          throw std::runtime_error("Array: out of bounds access");
+        throw std::runtime_error("Array: out of bounds access");
       }
       return container_ptr_rget(data + idx);
     }
@@ -226,7 +224,6 @@ namespace BCL {
 
     void get(size_t idx, T *vals, const size_t size) {
       if (idx + size > this->size()) {
-        printf("[%s]: get pointer arrary: index: %lu, size: %lu, container size: %lu\n", BCL::hostname().c_str(), idx, size, this->size());
         throw std::runtime_error("Array: out of bounds access");
       }
       container_ptr_rget(data + idx, vals, size);
