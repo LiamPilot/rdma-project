@@ -73,46 +73,43 @@ TcpServer::~TcpServer() {
 }
 
 
-void TcpServer::run_throughput_tests(int data_size) {
-    for (int buffer_size : utils::buffer_sizes) {
+void TcpServer::run_throughput_tests(size_t data_size) {
+    for (size_t buffer_size : utils::buffer_sizes) {
         throughput_test(buffer_size, data_size);
     }
 }
 
-void TcpServer::throughput_test(int buffer_size, int data_size) {
-    int last_index = data_size - (data_size % buffer_size);
-    std::unique_ptr<char[]> data(new char[data_size]);
-    char* little_buffer = new char[buffer_size];
-    for (int offset = 0; offset < last_index; offset += buffer_size) {
-        receive_message(buffer_size, data.get() + offset);
-//        memcpy(little_buffer, data.get(), buffer_size);
+void TcpServer::throughput_test(size_t buffer_size, size_t data_size) {
+    size_t last_index = data_size - (data_size % buffer_size);
+    std::vector<char> data(data_size);
+    std::vector<char> little_buffer(buffer_size);
+    for (size_t offset = 0; offset < last_index; offset += buffer_size) {
+        receive_message(buffer_size, data.data() + offset);
+        std::copy(data.begin(), data.end(), little_buffer.begin());
     }
-    receive_message(data_size % buffer_size, data.get() + last_index);
-    memcpy(little_buffer, data.get(), buffer_size);
-    delete[] little_buffer;
+    receive_message(data_size % buffer_size, data.data() + last_index);
+    std::copy(data.begin(), data.end(), little_buffer.begin());
 }
 
 void TcpServer::run_latency_tests() {
-    for (int buffer_size : utils::buffer_sizes) {
+    for (size_t buffer_size : utils::latency_buffer_sizes) {
         latency_test(buffer_size);
     }
     std::cout << "Finished latency test" << std::endl;
 }
 
 
-double TcpServer::latency_test(int buffer_size) {
-    char* data = new char[buffer_size];
-    char* little_buffer = new char[buffer_size];
+double TcpServer::latency_test(size_t buffer_size) {
+    std::vector<char> data(buffer_size);
+    std::vector<char> little_buffer(buffer_size);
     for (int i = 0; i < utils::num_loops; i++) {
-        memset(data, 0, buffer_size);
-        receive_message(buffer_size, data);
+        memset(data.data(), 0, buffer_size);
+        receive_message(buffer_size, data.data());
 //        memcpy(little_buffer, data, buffer_size);
     }
-    delete[] little_buffer;
-    delete[] data;
 }
 
-void TcpServer::receive_message(int buffer_size, char* data) const {
+void TcpServer::receive_message(size_t buffer_size, char* data) const {
     int bytes_read = 0;
 
     while (bytes_read < buffer_size) {

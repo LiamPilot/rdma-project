@@ -4,18 +4,25 @@ project(ConnectionExperiments)
 set(CMAKE_CXX_STANDARD 14)
 
 # Add -O0 to remove optimizations when using gcc
-set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O0")
-set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -O0")
+#set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O0")
+#set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -O0")
 
 add_subdirectory(infinity)
 
 add_executable(ConnectionExperiments main.cpp
-        RunServer.cpp
-        RunServer.h
         utils.cpp
         utils.h
-        RunClient.cpp
-        RunClient.h experiment_type.h RdmaClient.cpp RdmaClient.h RdmaServer.cpp RdmaServer.h Client.cpp Client.h Server.cpp Server.h TcpClient.cpp TcpClient.h TcpServer.cpp TcpServer.h)
+        experiment_type.h
+        RdmaClient.cpp
+        RdmaClient.h
+        RdmaServer.cpp
+        RdmaServer.h
+        Client.h
+        Server.h
+        TcpClient.cpp
+        TcpClient.h
+        TcpServer.cpp
+        TcpServer.h)
 
 include_directories(/usr/include /usr/local/include ./)
 

@@ -20,50 +20,68 @@ namespace utils {
     constexpr int PORT = 8001;
     constexpr int MAX_BUFFER_SIZE = 1024 << 15;
 
-    constexpr int num_loops = 1000;
+    constexpr int num_loops = 100000;
 
-    const static int buffer_sizes[] = {1024,
-                                       1024 << 1,
-                                       1024 << 2,
-                                       1024 << 3,
-                                       1024 << 4,
-                                       1024 << 5,
-                                       1024 << 6,
-                                       1024 << 7,
-                                       1024 << 8,
-                                       1024 << 9,
-                                       1024 << 10,
-                                       1024 << 11,
-                                       1024 << 12,
-                                       1024 << 13,
-                                       1024 << 14,
-                                       1024 << 15};
+    const static size_t latency_buffer_sizes[] = {8,
+                                                  16,
+                                                  32,
+                                                  64,
+                                                  128,
+                                                  256,
+                                                  512,
+                                                  1024,
+                                                  1024ul << 1u,
+                                                  1024ul << 2u,
+                                                  1024ul << 3u,
+                                                  1024ul << 4u,
+                                                  1024ul << 5u,
+                                                  1024ul << 6u,
+                                                  1024ul << 7u,
+                                                  1024ul << 8u,
+                                                  1024ul << 9u};
+
+    const static size_t buffer_sizes[] = {1024,
+                                          1024ul << 1u,
+                                          1024ul << 2u,
+                                          1024ul << 3u,
+                                          1024ul << 4u,
+                                          1024ul << 5u,
+                                          1024ul << 6u,
+                                          1024ul << 7u,
+                                          1024ul << 8u,
+                                          1024ul << 9u,
+                                          1024ul << 10u,
+                                          1024ul << 11u,
+                                          1024ul << 12u,
+                                          1024ul << 13u,
+                                          1024ul << 14u,
+                                          1024ul << 15u};
 
 
     struct throughput_test_result {
-        int buffer_size;
+        size_t buffer_size;
         double throughput;
     };
 
     struct latency_test_result {
-        int buffer_size;
+        size_t buffer_size;
         double latency;
     };
 
-    std::unique_ptr<char[]> GenerateRandomData(int len);
+    std::vector<char> GenerateRandomData(size_t len);
 
-    void random_data(char* s, int len);
-    void dev_random_data(char* data, int size);
+    void random_data(char* s, size_t len);
+    void dev_random_data(char* data, size_t size);
 
     int get_ib_card_address(ifaddrs* address);
 
     template<typename Clock, typename Duration>
     double calculate_throughput(std::chrono::time_point<Clock, Duration> start, std::chrono::time_point<Clock, Duration> stop,
-                                int data_size) {
+                                size_t data_size) {
         auto time = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start);
         return (((double) data_size) / ((double) time.count())) * pow(10, 9);
     }
-    std::unique_ptr<infinity::memory::Buffer> create_large_buffer(int data_size,
+    std::unique_ptr<infinity::memory::Buffer> create_large_buffer(size_t data_size,
             std::unique_ptr<infinity::core::Context>& context);
 }
 

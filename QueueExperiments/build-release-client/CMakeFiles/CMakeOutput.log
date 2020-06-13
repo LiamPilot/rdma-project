@@ -1,0 +1,458 @@
+The system is: Linux - 4.4.0-142-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/3.16.7/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/3.16.7/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2ac30/fast && /usr/bin/make  -f CMakeFiles/cmTC_2ac30.dir/build.make CMakeFiles/cmTC_2ac30.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ac30.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_2ac30.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_2ac30
+/home/lp616/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ac30.dir/link.txt --verbose=1
+/home/lp616/.local/bin/mpicc      CMakeFiles/cmTC_2ac30.dir/testCCompiler.c.o  -o cmTC_2ac30 
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0e9bd/fast && /usr/bin/make  -f CMakeFiles/cmTC_0e9bd.dir/build.make CMakeFiles/cmTC_0e9bd.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o
+/home/lp616/.local/bin/mpicc   -v -o CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o   -c /home/lp616/.local/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+mpicc for MPICH version 3.3.2
+Using built-in specs.
+COLLECT_GCC=gcc
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --prefix=/home/lp616/.local/ --disable-multilib
+Thread model: posix
+gcc version 9.3.1 20200604 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/home/lp616/.local/include' '-mtune=generic' '-march=x86-64'
+ /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/cc1 -quiet -v -I /home/lp616/.local/include -imultiarch x86_64-linux-gnu /home/lp616/.local/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccdRPVke.s
+GNU C17 (GCC) version 9.3.1 20200604 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.1 20200604, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/home/lp616/.local/include"
+  as it is a non-system directory that duplicates a system directory
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include
+ /usr/local/include
+ /home/lp616/.local/include
+ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 9.3.1 20200604 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.1 20200604, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f29ca2c08a06d8bde54d314c673ee66f
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/home/lp616/.local/include' '-mtune=generic' '-march=x86-64'
+ as -v -I /home/lp616/.local/include --64 -o CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o /tmp/ccdRPVke.s
+GNU assembler version 2.26.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.26.1
+COMPILER_PATH=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/home/lp616/.local/include' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_0e9bd
+/home/lp616/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e9bd.dir/link.txt --verbose=1
+/home/lp616/.local/bin/mpicc     -v CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o  -o cmTC_0e9bd 
+mpicc for MPICH version 3.3.2
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --prefix=/home/lp616/.local/ --disable-multilib
+Thread model: posix
+gcc version 9.3.1 20200604 (GCC) 
+COMPILER_PATH=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0e9bd' '-I' '/home/lp616/.local/include' '-L/home/lp616/.local/lib' '-mtune=generic' '-march=x86-64'
+ /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/collect2 -plugin /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/liblto_plugin.so -plugin-opt=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWkqR5g.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0e9bd /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtbegin.o -L/home/lp616/.local/lib -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1 -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../.. CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o -rpath /home/lp616/.local/lib --enable-new-dtags -lmpi -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0e9bd' '-I' '/home/lp616/.local/include' '-L/home/lp616/.local/lib' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include]
+    add: [/usr/local/include]
+    add: [/home/lp616/.local/include]
+    add: [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include] ==> [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/home/lp616/.local/include] ==> [/home/lp616/.local/include]
+  collapse include dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed] ==> [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include;/usr/local/include;/home/lp616/.local/include;/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_0e9bd/fast && /usr/bin/make  -f CMakeFiles/cmTC_0e9bd.dir/build.make CMakeFiles/cmTC_0e9bd.dir/build]
+  ignore line: [make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/lp616/.local/bin/mpicc   -v -o CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o   -c /home/lp616/.local/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [mpicc for MPICH version 3.3.2]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/lp616/.local/ --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.1 20200604 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/home/lp616/.local/include' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/cc1 -quiet -v -I /home/lp616/.local/include -imultiarch x86_64-linux-gnu /home/lp616/.local/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccdRPVke.s]
+  ignore line: [GNU C17 (GCC) version 9.3.1 20200604 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.1 20200604  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/home/lp616/.local/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /home/lp616/.local/include]
+  ignore line: [ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 9.3.1 20200604 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.1 20200604  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: f29ca2c08a06d8bde54d314c673ee66f]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/home/lp616/.local/include' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v -I /home/lp616/.local/include --64 -o CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o /tmp/ccdRPVke.s]
+  ignore line: [GNU assembler version 2.26.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.26.1]
+  ignore line: [COMPILER_PATH=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/home/lp616/.local/include' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_0e9bd]
+  ignore line: [/home/lp616/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e9bd.dir/link.txt --verbose=1]
+  ignore line: [/home/lp616/.local/bin/mpicc     -v CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o  -o cmTC_0e9bd ]
+  ignore line: [mpicc for MPICH version 3.3.2]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/lp616/.local/ --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.1 20200604 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0e9bd' '-I' '/home/lp616/.local/include' '-L/home/lp616/.local/lib' '-mtune=generic' '-march=x86-64']
+  link line: [ /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/collect2 -plugin /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/liblto_plugin.so -plugin-opt=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWkqR5g.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0e9bd /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtbegin.o -L/home/lp616/.local/lib -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1 -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../.. CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o -rpath /home/lp616/.local/lib --enable-new-dtags -lmpi -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccWkqR5g.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_0e9bd] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtbegin.o] ==> ignore
+    arg [-L/home/lp616/.local/lib] ==> dir [/home/lp616/.local/lib]
+    arg [-L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1] ==> dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1]
+    arg [-L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64] ==> dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../..] ==> dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../..]
+    arg [CMakeFiles/cmTC_0e9bd.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/home/lp616/.local/lib] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-lmpi] ==> lib [mpi]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/home/lp616/.local/lib] ==> [/home/lp616/.local/lib]
+  collapse library dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1] ==> [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1]
+  collapse library dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64] ==> [/home/lp616/.local/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../..] ==> [/home/lp616/.local/lib]
+  implicit libs: [mpi;gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/home/lp616/.local/lib;/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1;/home/lp616/.local/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f2251/fast && /usr/bin/make  -f CMakeFiles/cmTC_f2251.dir/build.make CMakeFiles/cmTC_f2251.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f2251.dir/testCXXCompiler.cxx.o
+/home/lp616/.local/bin/mpic++     -o CMakeFiles/cmTC_f2251.dir/testCXXCompiler.cxx.o -c /home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_f2251
+/home/lp616/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2251.dir/link.txt --verbose=1
+/home/lp616/.local/bin/mpic++       CMakeFiles/cmTC_f2251.dir/testCXXCompiler.cxx.o  -o cmTC_f2251 
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b926d/fast && /usr/bin/make  -f CMakeFiles/cmTC_b926d.dir/build.make CMakeFiles/cmTC_b926d.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o
+/home/lp616/.local/bin/mpic++    -v -o CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o -c /home/lp616/.local/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+mpicxx for MPICH version 3.3.2
+Using built-in specs.
+COLLECT_GCC=g++
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --prefix=/home/lp616/.local/ --disable-multilib
+Thread model: posix
+gcc version 9.3.1 20200604 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/home/lp616/.local/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/cc1plus -quiet -v -I /home/lp616/.local/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/lp616/.local/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccEyQN4h.s
+GNU C++14 (GCC) version 9.3.1 20200604 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.1 20200604, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/home/lp616/.local/include"
+  as it is a non-system directory that duplicates a system directory
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1
+ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/x86_64-pc-linux-gnu
+ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/backward
+ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include
+ /usr/local/include
+ /home/lp616/.local/include
+ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 9.3.1 20200604 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.1 20200604, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3f60f95667899d58f3463e0fb25a10c
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/home/lp616/.local/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v -I /home/lp616/.local/include --64 -o CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccEyQN4h.s
+GNU assembler version 2.26.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.26.1
+COMPILER_PATH=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/home/lp616/.local/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_b926d
+/home/lp616/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b926d.dir/link.txt --verbose=1
+/home/lp616/.local/bin/mpic++      -v CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_b926d 
+mpicxx for MPICH version 3.3.2
+Using built-in specs.
+COLLECT_GCC=g++
+COLLECT_LTO_WRAPPER=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --prefix=/home/lp616/.local/ --disable-multilib
+Thread model: posix
+gcc version 9.3.1 20200604 (GCC) 
+COMPILER_PATH=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b926d' '-I' '/home/lp616/.local/include' '-L/home/lp616/.local/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/collect2 -plugin /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/liblto_plugin.so -plugin-opt=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQTFVoo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b926d /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtbegin.o -L/home/lp616/.local/lib -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1 -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../.. CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o -lmpicxx -rpath /home/lp616/.local/lib --enable-new-dtags -lmpi -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b926d' '-I' '/home/lp616/.local/include' '-L/home/lp616/.local/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1]
+    add: [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/x86_64-pc-linux-gnu]
+    add: [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/backward]
+    add: [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include]
+    add: [/usr/local/include]
+    add: [/home/lp616/.local/include]
+    add: [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1] ==> [/home/lp616/.local/include/c++/9.3.1]
+  collapse include dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/x86_64-pc-linux-gnu] ==> [/home/lp616/.local/include/c++/9.3.1/x86_64-pc-linux-gnu]
+  collapse include dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/backward] ==> [/home/lp616/.local/include/c++/9.3.1/backward]
+  collapse include dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include] ==> [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/home/lp616/.local/include] ==> [/home/lp616/.local/include]
+  collapse include dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed] ==> [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/home/lp616/.local/include/c++/9.3.1;/home/lp616/.local/include/c++/9.3.1/x86_64-pc-linux-gnu;/home/lp616/.local/include/c++/9.3.1/backward;/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include;/usr/local/include;/home/lp616/.local/include;/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_b926d/fast && /usr/bin/make  -f CMakeFiles/cmTC_b926d.dir/build.make CMakeFiles/cmTC_b926d.dir/build]
+  ignore line: [make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/lp616/.local/bin/mpic++    -v -o CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o -c /home/lp616/.local/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [mpicxx for MPICH version 3.3.2]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=g++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/lp616/.local/ --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.1 20200604 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/home/lp616/.local/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/cc1plus -quiet -v -I /home/lp616/.local/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/lp616/.local/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccEyQN4h.s]
+  ignore line: [GNU C++14 (GCC) version 9.3.1 20200604 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.1 20200604  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/home/lp616/.local/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1]
+  ignore line: [ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/x86_64-pc-linux-gnu]
+  ignore line: [ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/backward]
+  ignore line: [ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /home/lp616/.local/include]
+  ignore line: [ /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 9.3.1 20200604 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.1 20200604  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: f3f60f95667899d58f3463e0fb25a10c]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/home/lp616/.local/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v -I /home/lp616/.local/include --64 -o CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccEyQN4h.s]
+  ignore line: [GNU assembler version 2.26.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.26.1]
+  ignore line: [COMPILER_PATH=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/home/lp616/.local/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_b926d]
+  ignore line: [/home/lp616/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b926d.dir/link.txt --verbose=1]
+  ignore line: [/home/lp616/.local/bin/mpic++      -v CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_b926d ]
+  ignore line: [mpicxx for MPICH version 3.3.2]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/lp616/.local/ --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.1 20200604 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b926d' '-I' '/home/lp616/.local/include' '-L/home/lp616/.local/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/collect2 -plugin /home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/liblto_plugin.so -plugin-opt=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQTFVoo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b926d /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtbegin.o -L/home/lp616/.local/lib -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1 -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../.. CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o -lmpicxx -rpath /home/lp616/.local/lib --enable-new-dtags -lmpi -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/lp616/.local/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccQTFVoo.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b926d] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtbegin.o] ==> ignore
+    arg [-L/home/lp616/.local/lib] ==> dir [/home/lp616/.local/lib]
+    arg [-L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1] ==> dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1]
+    arg [-L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64] ==> dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../..] ==> dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../..]
+    arg [CMakeFiles/cmTC_b926d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lmpicxx] ==> lib [mpicxx]
+    arg [-rpath] ==> ignore
+    arg [/home/lp616/.local/lib] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-lmpi] ==> lib [mpi]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/home/lp616/.local/lib] ==> [/home/lp616/.local/lib]
+  collapse library dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1] ==> [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1]
+  collapse library dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../lib64] ==> [/home/lp616/.local/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../..] ==> [/home/lp616/.local/lib]
+  implicit libs: [mpicxx;mpi;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/home/lp616/.local/lib;/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1;/home/lp616/.local/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64]
+  implicit fwks: []
+
+

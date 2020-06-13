@@ -1,0 +1,3783 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0381d/fast && /usr/bin/make  -f CMakeFiles/cmTC_0381d.dir/build.make CMakeFiles/cmTC_0381d.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0381d.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_0381d.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_0381d.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_0381d.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_0381d.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_0381d/fast' failed
+make: *** [cmTC_0381d/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5c099/fast && /usr/bin/make  -f CMakeFiles/cmTC_5c099.dir/build.make CMakeFiles/cmTC_5c099.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5c099.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_5c099.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_5c099.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_5c099.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_5c099.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_5c099/fast' failed
+make: *** [cmTC_5c099/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b72d4/fast && /usr/bin/make  -f CMakeFiles/cmTC_b72d4.dir/build.make CMakeFiles/cmTC_b72d4.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b72d4.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_b72d4.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_b72d4.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_b72d4.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_b72d4.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_b72d4/fast' failed
+make: *** [cmTC_b72d4/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_283a9/fast && /usr/bin/make  -f CMakeFiles/cmTC_283a9.dir/build.make CMakeFiles/cmTC_283a9.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_283a9.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_283a9.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_283a9.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_283a9.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_283a9.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_283a9/fast' failed
+make: *** [cmTC_283a9/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_32150/fast && /usr/bin/make  -f CMakeFiles/cmTC_32150.dir/build.make CMakeFiles/cmTC_32150.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32150.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_32150.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_32150.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_32150.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_32150.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_32150/fast' failed
+make: *** [cmTC_32150/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cc636/fast && /usr/bin/make  -f CMakeFiles/cmTC_cc636.dir/build.make CMakeFiles/cmTC_cc636.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc636.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_cc636.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_cc636.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_cc636.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_cc636.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_cc636/fast' failed
+make: *** [cmTC_cc636/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_47a7c/fast && /usr/bin/make  -f CMakeFiles/cmTC_47a7c.dir/build.make CMakeFiles/cmTC_47a7c.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47a7c.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_47a7c.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_47a7c.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_47a7c.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_47a7c.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_47a7c/fast' failed
+make: *** [cmTC_47a7c/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f4471/fast && /usr/bin/make  -f CMakeFiles/cmTC_f4471.dir/build.make CMakeFiles/cmTC_f4471.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4471.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_f4471.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_f4471.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_f4471.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_f4471.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_f4471/fast' failed
+make: *** [cmTC_f4471/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_65d10/fast && /usr/bin/make  -f CMakeFiles/cmTC_65d10.dir/build.make CMakeFiles/cmTC_65d10.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65d10.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_65d10.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_65d10.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_65d10.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_65d10.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_65d10/fast' failed
+make: *** [cmTC_65d10/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_170c3/fast && /usr/bin/make  -f CMakeFiles/cmTC_170c3.dir/build.make CMakeFiles/cmTC_170c3.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_170c3.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_170c3.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_170c3.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_170c3.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_170c3.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_170c3/fast' failed
+make: *** [cmTC_170c3/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3994b/fast && /usr/bin/make  -f CMakeFiles/cmTC_3994b.dir/build.make CMakeFiles/cmTC_3994b.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3994b.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_3994b.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_3994b.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_3994b.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_3994b.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_3994b/fast' failed
+make: *** [cmTC_3994b/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fb001/fast && /usr/bin/make  -f CMakeFiles/cmTC_fb001.dir/build.make CMakeFiles/cmTC_fb001.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fb001.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_fb001.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_fb001.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_fb001.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_fb001.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_fb001/fast' failed
+make: *** [cmTC_fb001/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+<command-line>: error: missing '(' after predicate
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/lp616/.local/bin/mpicc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpicc: line 195: sed: command not found
+/home/lp616/.local/bin/mpicc: line 195: awk: command not found
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--c++'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: error: unrecognized command line option '--ec++'; did you mean '-Weffc++'?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/lp616/.local/bin/mpic++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+/home/lp616/.local/bin/mpic++: line 217: expr: command not found
+g++: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+g++: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Error: Command line argument is needed!
+/home/lp616/.local/bin/mpic++: line 197: sed: command not found
+/home/lp616/.local/bin/mpic++: line 197: awk: command not found
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b60bb/fast && /usr/bin/make  -f CMakeFiles/cmTC_b60bb.dir/build.make CMakeFiles/cmTC_b60bb.dir/build
+make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o
+/home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+/home/lp616/.local/bin/mpicc: line 215: expr: command not found
+gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_b60bb.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+Makefile:124: recipe for target 'cmTC_b60bb/fast' failed
+make: *** [cmTC_b60bb/fast] Error 2
+
+
+

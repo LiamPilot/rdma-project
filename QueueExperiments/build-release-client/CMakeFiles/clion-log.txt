@@ -1,0 +1,8 @@
+/home/lp616/.local/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/home/lp616/.local/bin/mpicc -DCMAKE_CXX_COMPILER=/home/lp616/.local/bin/mpic++ -G "CodeBlocks - Unix Makefiles" /home/lp616/project/QueueExperiments
+-- Found Boost 1.73.0 at /home/lp616/.local/lib/cmake/Boost-1.73.0
+--   Requested configuration: QUIET
+-- Found boost_headers 1.73.0 at /home/lp616/.local/lib/cmake/boost_headers-1.73.0
+-- Boost Inc Dirs: /home/lp616/.local/include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lp616/project/QueueExperiments/build-release-client

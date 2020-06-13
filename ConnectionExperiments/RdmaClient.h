@@ -20,7 +20,7 @@ class RdmaClient : public Client{
 public:
     RdmaClient(std::string  ip, const std::string& port);
 
-    void run_throughput_tests(int data_size) override;
+    void run_throughput_tests(size_t data_size) override;
 
     void run_latency_tests() override;
 
@@ -36,34 +36,34 @@ private:
 
     void send_control_message(std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
 
-    std::vector<utils::throughput_test_result> run_read_tp_tests(int data_size);
+    std::vector<utils::throughput_test_result> run_read_tp_tests(size_t data_size);
 
-    double read_tp_test(int buffer_size, int data_size, infinity::memory::RegionToken* remote_buffer_token,
+    double read_tp_test(size_t buffer_size, size_t data_size, infinity::memory::RegionToken* remote_buffer_token,
             std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
 
-    std::vector<utils::throughput_test_result> run_write_tp_tests(int data_size);
+    std::vector<utils::throughput_test_result> run_write_tp_tests(size_t data_size);
 
-    double write_tp_test(int buffer_size, int data_size, std::unique_ptr<infinity::memory::Buffer>& local_buffer,
+    double write_tp_test(size_t buffer_size, size_t data_size, std::unique_ptr<infinity::memory::Buffer>& local_buffer,
                          infinity::memory::RegionToken* remote_buffer_token,
                          std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
 
-    std::vector<utils::throughput_test_result> run_two_sided_tp_tests(int data_size);
+    std::vector<utils::throughput_test_result> run_two_sided_tp_tests(size_t data_size);
 
-    double two_sided_tp_test(int buffer_size, int data_size, std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
+    double two_sided_tp_test(size_t buffer_size, size_t data_size, std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
 
     std::vector<utils::latency_test_result> run_read_latency_tests();
 
-    double read_latency_test(int buffer_size, infinity::memory::RegionToken* remote_buffer_token,
+    double read_latency_test(size_t buffer_size, infinity::memory::RegionToken* remote_buffer_token,
                              std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
 
     std::vector<utils::latency_test_result> run_write_latency_tests();
 
-    double write_latency_test(int buffer_size, infinity::memory::RegionToken* remote_buffer_token,
+    double write_latency_test(size_t buffer_size, infinity::memory::RegionToken* remote_buffer_token,
                               std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
 
     std::vector<utils::latency_test_result> run_two_sided_latency_tests();
 
-    double two_sided_latency_test(int buffer_size, std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
+    double two_sided_latency_test(size_t buffer_size, std::unique_ptr<infinity::queues::QueuePair>& queue_pair);
 
     const char* read_throughput_file_name = "rdma_read_throughput.txt";
     const char* read_latency_file_name = "rdma_read_latency.txt";

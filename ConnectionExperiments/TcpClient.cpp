@@ -7,14 +7,12 @@
 
 #include <string>
 #include <sys/socket.h>
-#include <sys/types.h>
 #include <netdb.h>
 #include <iostream>
 #include <ifaddrs.h>
 #include <fstream>
 #include <unistd.h>
 #include <chrono>
-#include <numeric>
 #include <vector>
 
 
@@ -74,64 +72,64 @@ TcpClient::~TcpClient() {
     close(server_socket);
 }
 
-void TcpClient::run_throughput_tests(int data_size) {
+void TcpClient::run_throughput_tests(size_t data_size) {
     std::ofstream results_file;
     results_file.open(throughput_file_name);
 
     auto data = utils::GenerateRandomData(data_size);
-    for (int buffer_size : utils::buffer_sizes) {
-        double throughput = throughput_test(buffer_size, data, data_size);
+    for (size_t buffer_size : utils::buffer_sizes) {
+        double throughput = throughput_test(buffer_size, data);
         results_file << buffer_size << " " << throughput << std::endl;
-        utils::dev_random_data(data.get(), data_size);
+        utils::dev_random_data(data.data(), data_size);
     }
 }
 
-double TcpClient::throughput_test(int buffer_size, std::unique_ptr<char[]>& data, int data_size) {
+double TcpClient::throughput_test(size_t buffer_size, std::vector<char> data) {
     std::cout << "Testing throughput for: " << buffer_size << '\n';
 
-    int last_index = data_size - (data_size % buffer_size);
+    size_t last_index = data.size() - (data.size() % buffer_size);
     auto start = std::chrono::high_resolution_clock::now();
-    for (int offset = 0; offset < last_index; offset += buffer_size) {
-        send_tcp_message(data.get() + offset, buffer_size);
+    for (size_t offset = 0; offset < last_index; offset += buffer_size) {
+        send_tcp_message(data.data() + offset, buffer_size);
     }
-    send_tcp_message(data.get() + last_index, data_size % buffer_size);
+    send_tcp_message(data.data() + last_index, data.size() % buffer_size);
     auto stop = std::chrono::high_resolution_clock::now();
 
-    return utils::calculate_throughput(start, stop, data_size);
+    return utils::calculate_throughput(start, stop, data.size());
 }
 
 void TcpClient::run_latency_tests() {
     std::ofstream results_file;
     results_file.open(latency_file_name);
 
-    for (int buffer_size : utils::buffer_sizes) {
+    for (size_t buffer_size : utils::latency_buffer_sizes) {
         double latency = latency_test(buffer_size);
         results_file << buffer_size << " " << latency << std::endl;
     }
 }
 
-double TcpClient::latency_test(int buffer_size) {
+double TcpClient::latency_test(size_t buffer_size) {
     std::cout << "Testing latency for: " << buffer_size << '\n';
-    std::vector<double> results{};
-    std::unique_ptr<char[]> data = std::make_unique<char[]>(buffer_size);
-    for (int i = 0; i < utils::num_loops; i++) {
-        utils::random_data(data.get(), buffer_size);
-        auto start = std::chrono::high_resolution_clock::now();
-        send_tcp_message(data.get(), buffer_size);
-        auto stop = std::chrono::high_resolution_clock::now();
 
-        auto time = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start);
-
-        if (i == 10)
-            std::cout << time.count() << "\n";
-
-        results.push_back(time.count());
+    int numBuffers = 40;
+    std::vector<std::vector<char>> dataBuffers(numBuffers);
+    for (int x = 0; x < numBuffers; x++) {
+        std::vector<char> buf = utils::GenerateRandomData(buffer_size);
+        dataBuffers[x] = buf;
     }
-    double sum = std::accumulate(results.begin(), results.end(), 0.0);
-    return sum / utils::num_loops;
+
+    auto start = std::chrono::high_resolution_clock::now();
+    for (int i = 0; i < utils::num_loops; i++) {
+        send_tcp_message(dataBuffers[i % numBuffers].data(), buffer_size);
+    }
+    auto stop = std::chrono::high_resolution_clock::now();
+
+    auto time = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start);
+    double latency = ((double) time.count()) / (double) utils::num_loops;
+    return latency;
 }
 
-void inline TcpClient::send_tcp_message(const char *message, int size) const {
+void inline TcpClient::send_tcp_message(const char *message, size_t size) const {
     int bytes_sent = 0;
     while (bytes_sent < size) {
         int new_bytes_sent = send(server_socket, message + bytes_sent, size - bytes_sent, 0);

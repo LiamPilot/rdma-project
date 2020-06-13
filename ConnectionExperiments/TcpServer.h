@@ -17,7 +17,7 @@ public:
 
     ~TcpServer() override;
 
-    void run_throughput_tests(int data_size) override;
+    void run_throughput_tests(size_t data_size) override;
 
     void run_latency_tests() override;
 
@@ -25,11 +25,11 @@ private:
     int client_socket;
 //    sockaddr_storage client_address;
 
-    double latency_test(int buffer_size);
+    double latency_test(size_t buffer_size);
 
-    void receive_message(int buffer_size, char* data) const;
+    void receive_message(size_t buffer_size, char* data) const;
 
-    void throughput_test(int buffer_size, int data_size);
+    void throughput_test(size_t buffer_size, size_t data_size);
 };
 
 

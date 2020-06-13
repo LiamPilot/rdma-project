@@ -29,7 +29,7 @@ void run_server(std::unique_ptr<infinity::core::Context> context, infinity::queu
 
         std::cout << "Doing two sided test\n";
         for (int buffer_size : utils::buffer_sizes) {
-            send_test_data(buffer_size, context.get(), qp, data.get(), tuple_size * num_tuples);
+            send_test_data(buffer_size, context.get(), qp, data.data(), tuple_size * num_tuples);
         }
 
         delete qp;
@@ -54,7 +54,7 @@ void serve_test_data(infinity::core::Context *context, infinity::queues::QueuePa
     auto data = utils::GenerateRandomData(data_size);
 
     std::cout << "Creating Buffer with Data\n";
-    auto data_buffer = new infinity::memory::Buffer(context, data.get(), data_size * sizeof(char));
+    auto data_buffer = new infinity::memory::Buffer(context, data.data(), data_size * sizeof(char));
     auto buffer_token = data_buffer->createRegionToken();
     qp_factory->bindToPort(utils::PORT);
     auto qp = qp_factory->acceptIncomingConnection(buffer_token, sizeof(infinity::memory::RegionToken));

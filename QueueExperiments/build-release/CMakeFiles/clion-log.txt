@@ -1,0 +1,4 @@
+Cannot generate into /home/liampilot/project/rdma-project/QueueExperiments/build-release
+This directory is already used for 'Release-Client-mpi' profile
+
+Please either delete it manually or select another generation directory

@@ -10,16 +10,16 @@
 #include <unistd.h>
 
 namespace utils {
-    std::unique_ptr<char[]> GenerateRandomData(int len) {
-        char* s = new char[len];
-        dev_random_data(s, len);
+    std::vector<char> GenerateRandomData(size_t len) {
+        std::vector<char> s(len);
+        dev_random_data(s.data(), len);
 //        std::default_random_engine rand {};
 //        std::uniform_int_distribution<int> distribution(65, 90);
 //        std::cout << "Finished filling data\n";
-        return std::unique_ptr<char []> {s};
+        return s;
     }
 
-    void random_data(char* s, int len) {
+    void random_data(char* s, size_t len) {
         static std::default_random_engine rand {};
         static std::uniform_int_distribution<int> distribution(65, 90);
 
@@ -31,7 +31,7 @@ namespace utils {
     }
 
 
-    void dev_random_data(char* data, int size) {
+    void dev_random_data(char* data, size_t size) {
         int fd = open("/dev/urandom", O_RDONLY);
         read(fd, data, size);
     }
@@ -60,9 +60,9 @@ namespace utils {
         }
     }
 
-    std::unique_ptr<infinity::memory::Buffer> create_large_buffer(int data_size,
+    std::unique_ptr<infinity::memory::Buffer> create_large_buffer(size_t data_size,
             std::unique_ptr<infinity::core::Context>& context) {
         auto data = utils::GenerateRandomData(data_size);
-        return std::make_unique<infinity::memory::Buffer>(context.get(), data.get(), data_size * sizeof(char));
+        return std::make_unique<infinity::memory::Buffer>(context.get(), data.data(), data_size * sizeof(char));
     }
 }

@@ -27,7 +27,7 @@ void run_client(infinity::core::Context *context, infinity::queues::QueuePairFac
         case DataDirection::write: {
             int data_size = tuple_size * num_tuples;
             auto data = utils::GenerateRandomData(data_size);
-            auto *local_buffer = new infinity::memory::Buffer(context, data.get(), data_size * sizeof(char));
+            auto local_buffer = new infinity::memory::Buffer(context, data.data), data_size * sizeof(char));
 
             for (int buffer_size : utils::buffer_sizes) {
                 double throughput = run_write_test(buffer_size, context, qp, remote_buffer_token, &requestToken,
@@ -35,7 +35,6 @@ void run_client(infinity::core::Context *context, infinity::queues::QueuePairFac
                 results_file << buffer_size << " " << throughput << endl;
             }
 
-            delete local_buffer;
             break;
         }
         case DataDirection::read: {

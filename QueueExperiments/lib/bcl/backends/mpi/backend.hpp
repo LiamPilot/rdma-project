@@ -117,7 +117,9 @@ void finalize() {
   BCL::barrier();
   MPI_Win_unlock_all(win);
   MPI_Info_free(&info);
+  printf("[%lu] finialised\n", BCL::rank());
   MPI_Win_free(&win);
+  printf("finalise mpi\n");
   if (we_initialized && !mpi_finalized()) {
     MPI_Finalize();
   }

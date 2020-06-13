@@ -54,7 +54,7 @@ void RdmaClient::write_latency_results_to_file(const std::vector<utils::latency_
     }
 }
 
-void RdmaClient::run_throughput_tests(int data_size) {
+void RdmaClient::run_throughput_tests(size_t data_size) {
     std::ofstream read_results_file;
     read_results_file.open(read_throughput_file_name);
     auto read_tp_results = run_read_tp_tests(data_size);
@@ -71,14 +71,14 @@ void RdmaClient::run_throughput_tests(int data_size) {
     write_tp_results_to_file(two_sided_tp_results, two_sided_results_file);
 }
 
-std::vector<utils::throughput_test_result> RdmaClient::run_read_tp_tests(int data_size) {
+std::vector<utils::throughput_test_result> RdmaClient::run_read_tp_tests(size_t data_size) {
     std::cout << "-- RDMA Read Throughput\n";
     auto queue_pair = connect_to_remote_buffer();
 //    auto queue_pair = qp_factory.connectToRemoteHost(server_ip.data(), server_port);
     auto remote_buffer_token = (infinity::memory::RegionToken*) queue_pair->getUserData();
 
     std::vector<utils::throughput_test_result> results;
-    for (int buffer_size : utils::buffer_sizes) {
+    for (size_t buffer_size : utils::buffer_sizes) {
         double throughput = read_tp_test(buffer_size, data_size, remote_buffer_token, queue_pair);
         utils::throughput_test_result result {buffer_size, throughput};
         results.push_back(result);
@@ -90,7 +90,7 @@ std::vector<utils::throughput_test_result> RdmaClient::run_read_tp_tests(int dat
     return results;
 }
 
-double RdmaClient::read_tp_test(int buffer_size, int data_size, infinity::memory::RegionToken* remote_buffer_token,
+double RdmaClient::read_tp_test(size_t buffer_size, size_t data_size, infinity::memory::RegionToken* remote_buffer_token,
                                 std::unique_ptr<infinity::queues::QueuePair>& queue_pair) {
     std::cout << "RDMA Read Throughput for: " << buffer_size << "\n";
     infinity::memory::Buffer local_buffer(context.get(), data_size * sizeof(char));
@@ -102,7 +102,7 @@ double RdmaClient::read_tp_test(int buffer_size, int data_size, infinity::memory
     wait_for_control_message();
     auto start = std::chrono::high_resolution_clock::now();
 
-    for (int offset = 0; offset < last_index; offset += buffer_size) {
+    for (size_t offset = 0; offset < last_index; offset += buffer_size) {
         queue_pair->read(&local_buffer,
                          offset,
                          remote_buffer_token,
@@ -129,20 +129,21 @@ double RdmaClient::read_tp_test(int buffer_size, int data_size, infinity::memory
     return utils::calculate_throughput(start, stop, data_size);
 }
 
-std::vector<utils::throughput_test_result> RdmaClient::run_write_tp_tests(int data_size) {
+std::vector<utils::throughput_test_result> RdmaClient::run_write_tp_tests(size_t data_size) {
     std::cout << "-- RDMA Write Throughput\n";
     auto data = utils::GenerateRandomData(data_size);
-    auto local_buffer = std::make_unique<infinity::memory::Buffer>(context.get(), data.get(), data_size * sizeof(char));
+    auto local_buffer = std::make_unique<infinity::memory::Buffer>(context.get(),
+            data.data(), data_size * sizeof(char));
 
     auto queue_pair = connect_to_remote_buffer();
     auto remote_buffer_token = (infinity::memory::RegionToken*) queue_pair->getUserData();
 
     std::vector<utils::throughput_test_result> results;
-    for (int buffer_size : utils::buffer_sizes) {
+    for (size_t buffer_size : utils::buffer_sizes) {
         double throughput = write_tp_test(buffer_size, data_size, local_buffer, remote_buffer_token, queue_pair);
         utils::throughput_test_result result {buffer_size, throughput};
         results.push_back(result);
-        utils::dev_random_data(data.get(), data_size);
+        utils::dev_random_data(data.data(), data_size);
     }
 
     send_control_message(queue_pair);
@@ -151,7 +152,7 @@ std::vector<utils::throughput_test_result> RdmaClient::run_write_tp_tests(int da
 }
 
 double
-RdmaClient::write_tp_test(int buffer_size, int data_size, std::unique_ptr<infinity::memory::Buffer>& local_buffer,
+RdmaClient::write_tp_test(size_t buffer_size, size_t data_size, std::unique_ptr<infinity::memory::Buffer>& local_buffer,
                           infinity::memory::RegionToken* remote_buffer_token,
                           std::unique_ptr<infinity::queues::QueuePair>& queue_pair) {
     std::cout << "RDMA Write Throughput for: " << buffer_size << "\n";
@@ -162,7 +163,7 @@ RdmaClient::write_tp_test(int buffer_size, int data_size, std::unique_ptr<infini
     wait_for_control_message();
     auto start = std::chrono::high_resolution_clock::now();
 
-    for (int offset = 0; offset < last_index; offset += buffer_size) {
+    for (size_t offset = 0; offset < last_index; offset += buffer_size) {
         queue_pair->write(local_buffer.get(),
                           offset,
                           remote_buffer_token,
@@ -188,12 +189,12 @@ RdmaClient::write_tp_test(int buffer_size, int data_size, std::unique_ptr<infini
     return utils::calculate_throughput(start, stop, data_size);
 }
 
-std::vector<utils::throughput_test_result> RdmaClient::run_two_sided_tp_tests(int data_size) {
+std::vector<utils::throughput_test_result> RdmaClient::run_two_sided_tp_tests(size_t data_size) {
     std::cout << "-- RDMA Two Sided Throughput\n";
     auto queue_pair = connect_to_remote_buffer();
 
     std::vector<utils::throughput_test_result> results;
-    for (int buffer_size : utils::buffer_sizes) {
+    for (size_t buffer_size : utils::buffer_sizes) {
         double throughput = two_sided_tp_test(buffer_size, data_size, queue_pair);
         utils::throughput_test_result result {buffer_size, throughput};
         results.push_back(result);
@@ -202,14 +203,14 @@ std::vector<utils::throughput_test_result> RdmaClient::run_two_sided_tp_tests(in
     return results;
 }
 
-double RdmaClient::two_sided_tp_test(int buffer_size, int data_size, std::unique_ptr<infinity::queues::QueuePair>& queue_pair) {
+double RdmaClient::two_sided_tp_test(size_t buffer_size, size_t data_size, std::unique_ptr<infinity::queues::QueuePair>& queue_pair) {
     send_control_message(queue_pair);
     std::cout << "RDMA Two Sided Throughput for: " << buffer_size << "\n";
 //    int num_messages = (data_size / buffer_size) + 1;
     infinity::memory::Buffer buffer(context.get(), buffer_size);
     auto start = std::chrono::high_resolution_clock::now();
 
-    for (int x = 0; x < data_size; x += buffer_size) {
+    for (size_t x = 0; x < data_size; x += buffer_size) {
         context->postReceiveBuffer(&buffer);
         infinity::core::receive_element_t receive_elem {};
         receive_elem.buffer = &buffer;
@@ -253,7 +254,7 @@ std::vector<utils::latency_test_result> RdmaClient::run_read_latency_tests() {
     auto remote_buffer_token = (infinity::memory::RegionToken*) queue_pair->getUserData();
 
     std::vector<utils::latency_test_result> results;
-    for (int buffer_size : utils::buffer_sizes) {
+    for (size_t buffer_size : utils::latency_buffer_sizes) {
         double latency = read_latency_test(buffer_size, remote_buffer_token, queue_pair);
         utils::latency_test_result result {buffer_size, latency};
         results.push_back(result);
@@ -264,25 +265,23 @@ std::vector<utils::latency_test_result> RdmaClient::run_read_latency_tests() {
 }
 
 double
-RdmaClient::read_latency_test(int buffer_size, infinity::memory::RegionToken* remote_buffer_token,
+RdmaClient::read_latency_test(size_t buffer_size, infinity::memory::RegionToken* remote_buffer_token,
                               std::unique_ptr<infinity::queues::QueuePair>& queue_pair) {
     std::cout << "RDMA Read Latency for: " << buffer_size << "\n";
+    infinity::requests::RequestToken* request_token = context->defaultRequestToken;
+    infinity::memory::Buffer local_buffer(context.get(), buffer_size);
 
-    std::vector<double> latencies;
+    auto start = std::chrono::high_resolution_clock::now();
     for (int i = 0; i < utils::num_loops; i++) {
-        infinity::memory::Buffer local_buffer(context.get(), buffer_size * sizeof(char));
-        infinity::requests::RequestToken* request_token = context->defaultRequestToken;
-
-        auto start = std::chrono::high_resolution_clock::now();
-        queue_pair->read(&local_buffer, remote_buffer_token, request_token);
+        queue_pair->read(&local_buffer, remote_buffer_token, buffer_size, request_token);
         request_token->waitUntilCompleted();
-        auto stop = std::chrono::high_resolution_clock::now();
-        auto latency = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
-        latencies.push_back(latency.count());
+//        memset(local_buffer.getData(), 0, buffer_size);
     }
 
-    double sum = std::accumulate(latencies.begin(), latencies.end(), 0.0);
-    return sum / utils::num_loops;
+    auto stop = std::chrono::high_resolution_clock::now();
+    auto total = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start);
+    double latency = ((double) total.count()) / (double) utils::num_loops;
+    return latency;
 }
 
 std::vector<utils::latency_test_result> RdmaClient::run_write_latency_tests() {
@@ -291,7 +290,7 @@ std::vector<utils::latency_test_result> RdmaClient::run_write_latency_tests() {
     auto remote_buffer_token = (infinity::memory::RegionToken*) queue_pair->getUserData();
 
     std::vector<utils::latency_test_result> results;
-    for (int buffer_size : utils::buffer_sizes) {
+    for (size_t buffer_size : utils::latency_buffer_sizes) {
         double latency = write_latency_test(buffer_size, remote_buffer_token, queue_pair);
         utils::latency_test_result result {buffer_size, latency};
         results.push_back(result);
@@ -302,28 +301,26 @@ std::vector<utils::latency_test_result> RdmaClient::run_write_latency_tests() {
 }
 
 double
-RdmaClient::write_latency_test(int buffer_size, infinity::memory::RegionToken*  remote_buffer_token,
+RdmaClient::write_latency_test(size_t buffer_size, infinity::memory::RegionToken*  remote_buffer_token,
                                std::unique_ptr<infinity::queues::QueuePair>& queue_pair) {
     std::cout << "RDMA Write Latency for: " << buffer_size << "\n";
-    std::vector<double> latencies;
 
     infinity::queues::OperationFlags op_flags;
     auto data = utils::GenerateRandomData(buffer_size);
+    infinity::memory::Buffer local_buffer(context.get(), data.data(), buffer_size * sizeof(char));
+    auto request_token = context->defaultRequestToken;
+
+    auto start = std::chrono::high_resolution_clock::now();
     for (int i = 0; i < utils::num_loops; i++) {
-        infinity::memory::Buffer local_buffer(context.get(), data.get(), buffer_size * sizeof(char));
-        auto request_token = context->defaultRequestToken;
-
-        auto start = std::chrono::high_resolution_clock::now();
-        queue_pair->write(&local_buffer, remote_buffer_token, request_token);
+        queue_pair->write(&local_buffer, remote_buffer_token, buffer_size, request_token);
         request_token->waitUntilCompleted();
-        auto stop = std::chrono::high_resolution_clock::now();
-
-        auto latency = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
-        latencies.push_back(latency.count());
+//        memset(local_buffer.getData(), 0, buffer_size);
     }
+    auto stop = std::chrono::high_resolution_clock::now();
 
-    auto sum = std::accumulate(latencies.begin(), latencies.end(), 0.0);
-    return sum / utils::num_loops;
+    auto total = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start);
+    double latency = ((double) total.count()) / (double) utils::num_loops;
+    return latency;
 }
 
 std::vector<utils::latency_test_result> RdmaClient::run_two_sided_latency_tests() {
@@ -332,7 +329,7 @@ std::vector<utils::latency_test_result> RdmaClient::run_two_sided_latency_tests(
 
     auto queue_pair = connect_to_remote_buffer();
 
-    for (int buffer_size : utils::buffer_sizes) {
+    for (size_t buffer_size : utils::latency_buffer_sizes) {
         double latency = two_sided_latency_test(buffer_size, queue_pair);
         utils::latency_test_result result {buffer_size, latency};
         results.push_back(result);
@@ -341,28 +338,25 @@ std::vector<utils::latency_test_result> RdmaClient::run_two_sided_latency_tests(
     return results;
 }
 
-double RdmaClient::two_sided_latency_test(int buffer_size,
+double RdmaClient::two_sided_latency_test(size_t buffer_size,
         std::unique_ptr<infinity::queues::QueuePair>& queue_pair) {
     std::cout << "RDMA Two Sided Latency for: " << buffer_size << "\n";
 
     send_control_message(queue_pair);
     auto request_token = context->defaultRequestToken;
-    std::vector<double> latencies;
+    infinity::memory::Buffer buffer(context.get(), buffer_size);
 
+    auto start = std::chrono::high_resolution_clock::now();
     for (int i = 0; i < utils::num_loops; i++) {
-        infinity::memory::Buffer buffer(context.get(), buffer_size);
-        auto start = std::chrono::high_resolution_clock::now();
-        queue_pair->send(&buffer, request_token);
+        queue_pair->send(&buffer, buffer_size, request_token);
         request_token->waitUntilCompleted();
-        auto stop = std::chrono::high_resolution_clock::now();
-        auto latency = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
-        latencies.push_back(latency.count());
     }
-
     send_control_message(queue_pair);
+    auto stop = std::chrono::high_resolution_clock::now();
 
-    double sum = std::accumulate(latencies.begin(), latencies.end(), 0.0);
-    return sum / utils::num_loops;
+    auto total = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start);
+
+    return ((double) total.count()) / ((double) utils::num_loops);
 }
 
 

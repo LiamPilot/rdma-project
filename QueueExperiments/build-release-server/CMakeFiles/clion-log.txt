@@ -1,0 +1,44 @@
+/home/lp616/.local/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/home/lp616/.local/bin/mpicc -DCMAKE_CXX_COMPILER=/home/lp616/.local/bin/mpic++ -G "CodeBlocks - Unix Makefiles" /home/lp616/project/QueueExperiments
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- Check for working C compiler: /home/lp616/.local/bin/mpicc
+-- Check for working C compiler: /home/lp616/.local/bin/mpicc -- broken
+CMake Error at /home/lp616/.local/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake:60 (message):
+  The C compiler
+
+    "/home/lp616/.local/bin/mpicc"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/make cmTC_b60bb/fast && /usr/bin/make  -f CMakeFiles/cmTC_b60bb.dir/build.make CMakeFiles/cmTC_b60bb.dir/build
+    make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+    Building C object CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o
+    /home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+    /home/lp616/.local/bin/mpicc: line 215: expr: command not found
+    /home/lp616/.local/bin/mpicc: line 215: expr: command not found
+    /home/lp616/.local/bin/mpicc: line 215: expr: command not found
+    /home/lp616/.local/bin/mpicc: line 215: expr: command not found
+    gcc: fatal error: cannot execute 'as': execvp: No such file or directory
+    compilation terminated.
+    CMakeFiles/cmTC_b60bb.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o' failed
+    make[1]: *** [CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o] Error 1
+    make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
+    Makefile:124: recipe for target 'cmTC_b60bb/fast' failed
+    make: *** [cmTC_b60bb/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeOutput.log".
+See also "/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeError.log".

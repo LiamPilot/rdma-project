@@ -1,0 +1,1 @@
+/home/lp616/.local/bin/mpic++  -O3 -DNDEBUG   CMakeFiles/BCLExperiments.dir/bcl_tests/BCLTests.cpp.o CMakeFiles/BCLExperiments.dir/utils.cpp.o  -o BCLExperiments  /home/lp616/.local/lib/libgasnet-ibv-par.a -libverbs -lpthread -lrt -lmpi 

@@ -7,8 +7,10 @@
 
 #include "Client.h"
 
+#include <cstddef>
 #include <string>
 #include <memory>
+#include <vector>
 
 class TcpClient : public Client {
 public:
@@ -16,7 +18,7 @@ public:
 
     ~TcpClient() override;
 
-    void run_throughput_tests(int data_size) override;
+    void run_throughput_tests(size_t data_size) override;
 
     void run_latency_tests() override;
 
@@ -26,11 +28,11 @@ private:
 
     int server_socket;
 
-    double latency_test(int buffer_size);
+    double latency_test(size_t buffer_size);
 
-    void inline send_tcp_message(const char* message, int size) const;
+    void inline send_tcp_message(const char* message, size_t size) const;
 
-    double throughput_test(int buffer_size, std::unique_ptr<char[]>& data, int data_size);
+    double throughput_test(size_t buffer_size, std::vector<char> data);
 };
 
 

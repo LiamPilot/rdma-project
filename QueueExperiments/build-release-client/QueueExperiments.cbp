@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="QueueExperiments"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\.local\;CMake Files\..\..\.local\lib\;CMake Files\..\..\.local\lib\cmake\;CMake Files\..\..\.local\lib\cmake\Boost-1.73.0\;CMake Files\..\..\.local\lib\cmake\boost_headers-1.73.0\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lp616/project/QueueExperiments/build-release-client"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lp616/project/QueueExperiments/build-release-client"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lp616/project/QueueExperiments/build-release-client"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BCLExperiments">
+				<Option output="/home/lp616/project/QueueExperiments/build-release-client/BCLExperiments" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lp616/project/QueueExperiments/build-release-client"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lp616/.local/include/ibv-conduit"/>
+					<Add directory="/home/lp616/project/QueueExperiments/lib"/>
+					<Add directory="/home/lp616/project/QueueExperiments/include"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/backward"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/lp616/.local/include"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 BCLExperiments"/>
+					<CompileFile command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BCLExperiments/fast">
+				<Option output="/home/lp616/project/QueueExperiments/build-release-client/BCLExperiments" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lp616/project/QueueExperiments/build-release-client"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lp616/.local/include/ibv-conduit"/>
+					<Add directory="/home/lp616/project/QueueExperiments/lib"/>
+					<Add directory="/home/lp616/project/QueueExperiments/include"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/backward"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/lp616/.local/include"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 BCLExperiments/fast"/>
+					<CompileFile command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BoostExperiments">
+				<Option output="/home/lp616/project/QueueExperiments/build-release-client/BoostExperiments" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lp616/project/QueueExperiments/build-release-client"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lp616/project/QueueExperiments/include"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/backward"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/lp616/.local/include"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 BoostExperiments"/>
+					<CompileFile command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BoostExperiments/fast">
+				<Option output="/home/lp616/project/QueueExperiments/build-release-client/BoostExperiments" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lp616/project/QueueExperiments/build-release-client"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lp616/project/QueueExperiments/include"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/../../../../include/c++/9.3.1/backward"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/lp616/.local/include"/>
+					<Add directory="/home/lp616/.local/lib/gcc/x86_64-pc-linux-gnu/9.3.1/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 BoostExperiments/fast"/>
+					<CompileFile command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j40 -f &quot;/home/lp616/project/QueueExperiments/build-release-client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lp616/project/QueueExperiments/bcl_tests/BCLTests.cpp">
+			<Option target="BCLExperiments"/>
+		</Unit>
+		<Unit filename="/home/lp616/project/QueueExperiments/boost_tests/BoostTests.cpp">
+			<Option target="BoostExperiments"/>
+		</Unit>
+		<Unit filename="/home/lp616/project/QueueExperiments/utils.cpp">
+			<Option target="BCLExperiments"/>
+			<Option target="BoostExperiments"/>
+		</Unit>
+		<Unit filename="/home/lp616/project/QueueExperiments/utils.h">
+			<Option target="BCLExperiments"/>
+			<Option target="BoostExperiments"/>
+		</Unit>
+		<Unit filename="/home/lp616/project/QueueExperiments/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/lp616/project/QueueExperiments/../../.local/lib/cmake/Boost-1.73.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\cmake\Boost-1.73.0\"/>
+		</Unit>
+		<Unit filename="/home/lp616/project/QueueExperiments/../../.local/lib/cmake/Boost-1.73.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\cmake\Boost-1.73.0\"/>
+		</Unit>
+		<Unit filename="/home/lp616/project/QueueExperiments/../../.local/lib/cmake/boost_headers-1.73.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\cmake\boost_headers-1.73.0\"/>
+		</Unit>
+		<Unit filename="/home/lp616/project/QueueExperiments/../../.local/lib/cmake/boost_headers-1.73.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\cmake\boost_headers-1.73.0\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
