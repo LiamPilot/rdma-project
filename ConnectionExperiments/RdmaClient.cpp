@@ -277,8 +277,8 @@ RdmaClient::read_latency_test(size_t buffer_size, infinity::memory::RegionToken*
         request_token->waitUntilCompleted();
 //        memset(local_buffer.getData(), 0, buffer_size);
     }
-
     auto stop = std::chrono::high_resolution_clock::now();
+
     auto total = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start);
     double latency = ((double) total.count()) / (double) utils::num_loops;
     return latency;

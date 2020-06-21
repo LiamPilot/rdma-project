@@ -14,21 +14,21 @@ CMake Error at /home/lp616/.local/share/cmake-3.16/Modules/CMakeTestCCompiler.cm
 
     Change Dir: /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp
     
-    Run Build Command(s):/usr/bin/make cmTC_b60bb/fast && /usr/bin/make  -f CMakeFiles/cmTC_b60bb.dir/build.make CMakeFiles/cmTC_b60bb.dir/build
+    Run Build Command(s):/usr/bin/make cmTC_1a71c/fast && /usr/bin/make  -f CMakeFiles/cmTC_1a71c.dir/build.make CMakeFiles/cmTC_1a71c.dir/build
     make[1]: Entering directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
-    Building C object CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o
-    /home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
+    Building C object CMakeFiles/cmTC_1a71c.dir/testCCompiler.c.o
+    /home/lp616/.local/bin/mpicc    -o CMakeFiles/cmTC_1a71c.dir/testCCompiler.c.o   -c /home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp/testCCompiler.c
     /home/lp616/.local/bin/mpicc: line 215: expr: command not found
     /home/lp616/.local/bin/mpicc: line 215: expr: command not found
     /home/lp616/.local/bin/mpicc: line 215: expr: command not found
     /home/lp616/.local/bin/mpicc: line 215: expr: command not found
     gcc: fatal error: cannot execute 'as': execvp: No such file or directory
     compilation terminated.
-    CMakeFiles/cmTC_b60bb.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o' failed
-    make[1]: *** [CMakeFiles/cmTC_b60bb.dir/testCCompiler.c.o] Error 1
+    CMakeFiles/cmTC_1a71c.dir/build.make:68: recipe for target 'CMakeFiles/cmTC_1a71c.dir/testCCompiler.c.o' failed
+    make[1]: *** [CMakeFiles/cmTC_1a71c.dir/testCCompiler.c.o] Error 1
     make[1]: Leaving directory '/home/lp616/project/QueueExperiments/build-release-server/CMakeFiles/CMakeTmp'
-    Makefile:124: recipe for target 'cmTC_b60bb/fast' failed
-    make: *** [cmTC_b60bb/fast] Error 2
+    Makefile:124: recipe for target 'cmTC_1a71c/fast' failed
+    make: *** [cmTC_1a71c/fast] Error 2
     
     
 

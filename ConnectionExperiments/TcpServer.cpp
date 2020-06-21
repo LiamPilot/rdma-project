@@ -84,11 +84,16 @@ void TcpServer::throughput_test(size_t buffer_size, size_t data_size) {
     std::vector<char> data(data_size);
     std::vector<char> little_buffer(buffer_size);
     for (size_t offset = 0; offset < last_index; offset += buffer_size) {
-        receive_message(buffer_size, data.data() + offset);
-        std::copy(data.begin(), data.end(), little_buffer.begin());
+        receive_message(buffer_size, little_buffer.data());
+        std::copy(little_buffer.begin(), little_buffer.end(), data.begin() + offset);
     }
-    receive_message(data_size % buffer_size, data.data() + last_index);
-    std::copy(data.begin(), data.end(), little_buffer.begin());
+    receive_message(data_size % buffer_size, little_buffer.data());
+    std::copy(little_buffer.begin(),
+            little_buffer.end() - (little_buffer.size() - (data_size % buffer_size)),
+            data.begin() + last_index);
+
+    char* control_message = "y";
+    send_tcp_message(control_message, 1);
 }
 
 void TcpServer::run_latency_tests() {
@@ -103,14 +108,16 @@ double TcpServer::latency_test(size_t buffer_size) {
     std::vector<char> data(buffer_size);
     std::vector<char> little_buffer(buffer_size);
     for (int i = 0; i < utils::num_loops; i++) {
-        memset(data.data(), 0, buffer_size);
-        receive_message(buffer_size, data.data());
-//        memcpy(little_buffer, data, buffer_size);
+        receive_message(buffer_size, little_buffer.data());
+        std::copy(little_buffer.begin(), little_buffer.end(), data.begin());
     }
+    char* control_message = "y";
+    send_tcp_message(control_message, 1);
+    return 0;
 }
 
 void TcpServer::receive_message(size_t buffer_size, char* data) const {
-    int bytes_read = 0;
+    size_t bytes_read = 0;
 
     while (bytes_read < buffer_size) {
         int new_bytes_read = recv(client_socket, data + bytes_read, buffer_size - bytes_read, 0);
@@ -123,4 +130,14 @@ void TcpServer::receive_message(size_t buffer_size, char* data) const {
 
 }
 
+void inline TcpServer::send_tcp_message(const char *message, size_t size) const {
+    size_t bytes_sent = 0;
+    while (bytes_sent < size) {
+        int new_bytes_sent = send(client_socket, message + bytes_sent, size - bytes_sent, 0);
+        if (new_bytes_sent < 0) {
+            std::cout << "Something went wrong sending data: " << errno << "\n";
+        }
+        bytes_sent += new_bytes_sent;
+    }
 
+}

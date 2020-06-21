@@ -1,0 +1,12 @@
+PUSH | size: 4 bytes, latency: 47.0773 ns, throughput: 8.49667e+07 bytes/second, ops/s: 2.12417e+07 operations/second
+PUSH | size: 16 bytes, latency: 47.7073 ns, throughput: 3.35379e+08 bytes/second, ops/s: 2.09612e+07 operations/second
+PUSH | size: 64 bytes, latency: 52.0862 ns, throughput: 1.22873e+09 bytes/second, ops/s: 1.91989e+07 operations/second
+PUSH | size: 128 bytes, latency: 57.607 ns, throughput: 2.22195e+09 bytes/second, ops/s: 1.7359e+07 operations/second
+PUSH | size: 256 bytes, latency: 64.8092 ns, throughput: 3.95006e+09 bytes/second, ops/s: 1.54299e+07 operations/second
+PUSH | size: 512 bytes, latency: 75.1588 ns, throughput: 6.81225e+09 bytes/second, ops/s: 1.33052e+07 operations/second
+PUSH | size: 1024 bytes, latency: 100.19 ns, throughput: 1.02206e+10 bytes/second, ops/s: 9.98106e+06 operations/second
+PUSH | size: 2048 bytes, latency: 162.754 ns, throughput: 1.25834e+10 bytes/second, ops/s: 6.14425e+06 operations/second
+PUSH | size: 4096 bytes, latency: 420.629 ns, throughput: 9.7378e+09 bytes/second, ops/s: 2.37739e+06 operations/second
+PUSH | size: 8192 bytes, latency: 2984.77 ns, throughput: 2.7446e+09 bytes/second, ops/s: 335034 operations/second
+PUSH | size: 16384 bytes, latency: 9388.46 ns, throughput: 1.74512e+09 bytes/second, ops/s: 106514 operations/second
+PUSH | size: 32768 bytes, latency: 34066.2 ns, throughput: 9.6189e+08 bytes/second, ops/s: 29354.6 operations/second

@@ -93,6 +93,7 @@ double TcpClient::throughput_test(size_t buffer_size, std::vector<char> data) {
         send_tcp_message(data.data() + offset, buffer_size);
     }
     send_tcp_message(data.data() + last_index, data.size() % buffer_size);
+    receive_message(1, data.data());
     auto stop = std::chrono::high_resolution_clock::now();
 
     return utils::calculate_throughput(start, stop, data.size());
@@ -122,6 +123,7 @@ double TcpClient::latency_test(size_t buffer_size) {
     for (int i = 0; i < utils::num_loops; i++) {
         send_tcp_message(dataBuffers[i % numBuffers].data(), buffer_size);
     }
+    receive_message(1, dataBuffers[0].data());
     auto stop = std::chrono::high_resolution_clock::now();
 
     auto time = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start);
@@ -130,7 +132,7 @@ double TcpClient::latency_test(size_t buffer_size) {
 }
 
 void inline TcpClient::send_tcp_message(const char *message, size_t size) const {
-    int bytes_sent = 0;
+    size_t bytes_sent = 0;
     while (bytes_sent < size) {
         int new_bytes_sent = send(server_socket, message + bytes_sent, size - bytes_sent, 0);
         if (new_bytes_sent < 0) {
@@ -141,3 +143,16 @@ void inline TcpClient::send_tcp_message(const char *message, size_t size) const 
 
 }
 
+void TcpClient::receive_message(size_t buffer_size, char* data) const {
+    size_t bytes_read = 0;
+
+    while (bytes_read < buffer_size) {
+        int new_bytes_read = recv(server_socket, data + bytes_read, buffer_size - bytes_read, 0);
+        if (new_bytes_read <= 0) {
+            std::cout << "She's going down cap'n: " << errno << std::endl;
+            exit(-1);
+        }
+        bytes_read += new_bytes_read;
+    }
+
+}

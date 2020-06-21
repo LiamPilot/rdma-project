@@ -47,7 +47,7 @@ namespace utils {
 
         bool found = false;
         for (; address != nullptr; address = address->ifa_next) {
-            if (!found && address->ifa_name[0] == 'i' && address->ifa_name[1] == 'b') {
+            if (!found && address->ifa_name[2] != '\0' && address->ifa_name[3] == '1' && address->ifa_name[4] == '0') {
                 found = true;
                 *out_address = *address;
             }

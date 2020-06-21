@@ -1,0 +1,12 @@
+POP  | size: 4 bytes, latency: 57.8385 ns, throughput: 6.91581e+07 bytes/second, ops/s: 1.72895e+07 operations/second
+POP  | size: 16 bytes, latency: 59.3415 ns, throughput: 2.69626e+08 bytes/second, ops/s: 1.68516e+07 operations/second
+POP  | size: 64 bytes, latency: 60.9979 ns, throughput: 1.04922e+09 bytes/second, ops/s: 1.6394e+07 operations/second
+POP  | size: 128 bytes, latency: 68.3162 ns, throughput: 1.87364e+09 bytes/second, ops/s: 1.46378e+07 operations/second
+POP  | size: 256 bytes, latency: 78.2196 ns, throughput: 3.27284e+09 bytes/second, ops/s: 1.27845e+07 operations/second
+POP  | size: 512 bytes, latency: 94.5634 ns, throughput: 5.41436e+09 bytes/second, ops/s: 1.05749e+07 operations/second
+POP  | size: 1024 bytes, latency: 297.295 ns, throughput: 3.44439e+09 bytes/second, ops/s: 3.36366e+06 operations/second
+POP  | size: 2048 bytes, latency: 1111.93 ns, throughput: 1.84184e+09 bytes/second, ops/s: 899334 operations/second
+POP  | size: 4096 bytes, latency: 4780.65 ns, throughput: 8.56787e+08 bytes/second, ops/s: 209177 operations/second
+POP  | size: 8192 bytes, latency: 40005.2 ns, throughput: 2.04773e+08 bytes/second, ops/s: 24996.7 operations/second
+POP  | size: 16384 bytes, latency: 164199 ns, throughput: 9.97814e+07 bytes/second, ops/s: 6090.17 operations/second
+POP  | size: 32768 bytes, latency: 34295.2 ns, throughput: 9.5547e+08 bytes/second, ops/s: 29158.6 operations/second

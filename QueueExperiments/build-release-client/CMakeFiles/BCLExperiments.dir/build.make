@@ -97,7 +97,7 @@ BCLExperiments_EXTERNAL_OBJECTS =
 BCLExperiments: CMakeFiles/BCLExperiments.dir/bcl_tests/BCLTests.cpp.o
 BCLExperiments: CMakeFiles/BCLExperiments.dir/utils.cpp.o
 BCLExperiments: CMakeFiles/BCLExperiments.dir/build.make
-BCLExperiments: /home/lp616/.local/lib/libgasnet-ibv-par.a
+BCLExperiments: /home/lp616/.local/lib/libgasnet-ibv-seq.a
 BCLExperiments: CMakeFiles/BCLExperiments.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lp616/project/QueueExperiments/build-release-client/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable BCLExperiments"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BCLExperiments.dir/link.txt --verbose=$(VERBOSE)

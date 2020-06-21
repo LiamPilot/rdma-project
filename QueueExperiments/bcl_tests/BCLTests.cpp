@@ -1,4 +1,4 @@
-#define GASNET_PAR
+#define GASNET_SEQ
 
 #include <string>
 #include <chrono>
@@ -7,14 +7,15 @@
 #include <cmath>
 #include <memory>
 #include <cstring>
+#include <fstream>
+#include <sstream>
 
 #include <bcl/bcl.hpp>
 #include <bcl/containers/CircularQueue.hpp>
-#include <sstream>
 
 #include "../utils.h"
 
-constexpr int num_ops = 10000;
+constexpr int num_ops = 100000;
 constexpr int queue_size = num_ops;
 constexpr int num_vecs = 24;
 static int barrier_num = 0;
@@ -29,7 +30,7 @@ void loud_barrier() {
     printf("[%s]: Exiting %d\n", BCL::hostname().c_str(), barrier_num++);
 }
 
-void master(BCL::CircularQueue<int>& queue, int buf_size) {
+void master(BCL::CircularQueue<int>& queue, int buf_size, std::ofstream& results_file) {
 //    prints("Running Master!");
 
     // Random int vectors to push
@@ -55,15 +56,18 @@ void master(BCL::CircularQueue<int>& queue, int buf_size) {
     double duration = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start).count();
     double throughput = (((double) (buf_size * sizeof(int) * num_pushes)) / duration) * 1e9;
     double latency = duration / (double) num_pushes;
+    double ops = (num_pushes / duration) * 1e9;
 
     std::stringstream message;
     message << "PUSH | size: " << buf_size * sizeof(int) << " bytes, "
             << "latency: " << latency << "ns, "
-            << "throughput: " << throughput << " bytes/second";
+            << "throughput: " << throughput << " bytes/second, "
+            << "ops/s: " << ops << " operations/second";
     prints(message.str().c_str());
+    results_file << message.str() << '\n';
 }
 
-void worker(BCL::CircularQueue<int>& queue, int buf_size) {
+void worker(BCL::CircularQueue<int>& queue, int buf_size, std::ofstream& results_file) {
 //    prints("Running Worker!");
 
     auto data = std::make_unique<int[]>(buf_size * num_vecs);
@@ -82,53 +86,68 @@ void worker(BCL::CircularQueue<int>& queue, int buf_size) {
     auto stop = std::chrono::high_resolution_clock::now();
     double duration = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start).count();
     double throughput = (((double) (buf_size * sizeof(int) * num_pops)) / duration) * 1e9;
+    double ops = (num_pops / duration) * 1e9;
     double latency = duration / (double) num_pops;
 
     std::stringstream message;
     message << "POP  | size: " << buf_size * sizeof(int) << " bytes, "
             << "latency: " << latency << "ns, "
-            << "throughput: " << throughput << " bytes/second";
+            << "throughput: " << throughput << " bytes/second, "
+            << "ops/s: " << ops << " operations/second";
     prints(message.str().c_str());
-
+    results_file << message.str() << '\n';
 }
 
 int main() {
     BCL::init();
 
-    srand48(BCL::rank());
     if (BCL::nprocs() < 2) {
         BCL::print("must run with at least 2 processes");
         exit(1);
     }
 
     BCL::CircularQueue<int> queue(1, queue_size);
+    BCL::barrier();
 
-    // warmup
     srand48(BCL::rank());
-    for (int i = 0; i < queue_size / 2; i++) {
-        queue.push(lrand48());
+    for (int i = 0; i < 5; i++) {
+        queue.push(BCL::rank());
+        std::cout << BCL::rank() << ": Pushed to queue, i = " << i << "\n";
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
-    int x;
-    for (int i = 0; i < queue_size / 2; i++) {
-        queue.pop(x);
-    }
-
-    prints(std::to_string(queue.size()).c_str());
 
     BCL::barrier();
 
-    for (int buffer_size : utils::buffer_sizes) {
-        if (BCL::rank() % 2 == 0) {
-            master(queue, buffer_size);
-            if (buffer_size == utils::buffer_sizes[sizeof(utils::buffer_sizes) - 1]) BCL::barrier();
-        } else {
-            if (buffer_size == utils::buffer_sizes[0]) BCL::barrier();
-            worker(queue, buffer_size);
-        }
+    int x;
+    for (int i = 0; i < 5; i++) {
+        queue.pop(x);
+        std::cout << BCL::rank() << ": Popped " << x << " from queue, i = " << i << "\n";
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 
-    prints("Done, cleaning up");
+    BCL::barrier();
 
+//    prints(std::to_string(queue.size()).c_str());
+//    std::ofstream push_results;
+//    push_results.open("mpi_ib_remote_push.txt");
+//    std::ofstream pop_results;
+//    pop_results.open("mpi_ib_local_pop.txt");
+//
+//    BCL::barrier();
+//
+//    for (int buffer_size : utils::buffer_sizes) {
+//        if (BCL::rank() % 2 == 0) {
+//            master(queue, buffer_size, push_results);
+//            if (buffer_size == utils::buffer_sizes[sizeof(utils::buffer_sizes) - 1]) BCL::barrier();
+//        } else {
+//            if (buffer_size == utils::buffer_sizes[0]) BCL::barrier();
+//            worker(queue, buffer_size, pop_results);
+//        }
+//    }
+//
+//    prints("Done, cleaning up");
+//    push_results.close();
+//    pop_results.close();
     BCL::finalize();
     return 0;
 }

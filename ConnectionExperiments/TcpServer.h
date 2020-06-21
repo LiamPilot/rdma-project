@@ -30,6 +30,8 @@ private:
     void receive_message(size_t buffer_size, char* data) const;
 
     void throughput_test(size_t buffer_size, size_t data_size);
+
+    void send_tcp_message(const char* message, size_t size) const;
 };
 
 
