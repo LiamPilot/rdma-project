@@ -4,3 +4,6 @@
 [submodule "QueueExperiments/bcl"]
 	path = QueueExperiments/bcl
 	url = https://github.com/LiamPilot/bcl.git
+[submodule "ConnectionExperiments/infinity"]
+	path = ConnectionExperiments/infinity
+	url = https://github.com/claudebarthels/infinity.git

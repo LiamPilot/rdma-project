@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 14)
 #set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O0")
 #set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -O0")
 
-add_subdirectory(infinity)
+add_subdirectory(infinity/src)
 
 add_executable(ConnectionExperiments main.cpp
         utils.cpp
