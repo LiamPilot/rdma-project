@@ -20,7 +20,7 @@ target_link_libraries(BoostExperiments boost_graph boost_graph_parallel boost_mp
 #endif()
 
 add_executable(BCLExperiments bcl_tests/BCLTests.cpp utils.h utils.cpp)
-target_include_directories(BCLExperiments BEFORE PRIVATE /home/lp616/.local/include /home/lp616/.local/include/ibv-conduit lib)
+target_include_directories(BCLExperiments BEFORE PRIVATE /home/lp616/.local/include /home/lp616/.local/include/ibv-conduit lib/bcl)
 target_link_libraries(BCLExperiments /home/lp616/.local/lib/libgasnet-ibv-seq.a ibverbs pthread rt mpi)
 
 ## see https://cmake.org/cmake/help/latest/module/FindBoost.html

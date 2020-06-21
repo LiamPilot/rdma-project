@@ -1,3 +1,6 @@
 [submodule "LightShiv"]
 	path = LightShiv
 	url = git@github.com:LiamPilot/LightShiv.git
+[submodule "QueueExperiments/bcl"]
+	path = QueueExperiments/bcl
+	url = https://github.com/LiamPilot/bcl.git
